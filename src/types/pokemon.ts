@@ -216,6 +216,9 @@ export interface EncounterFilters {
   encounterType: string;
   rarity: string;
   evYieldStat: EvYieldStat | "";
+  abilityName: string;
+  heldItemId: string;
+  moveId: string;
   timeOfDay: TimeOfDay | "";
   sortKey: EncounterSortKey;
   sortDirection: SortDirection;

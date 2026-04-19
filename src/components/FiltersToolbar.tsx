@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import type { EncounterFilters, EncounterSortKey, EvYieldStat, SortDirection } from "../types/pokemon";
 import { formatStatName } from "../features/pokemon/formatPokemon";
 
@@ -6,10 +7,18 @@ interface FiltersToolbarProps {
   encounterTypes: string[];
   rarities: string[];
   evYieldStats: EvYieldStat[];
+  abilityOptions: FilterOption[];
+  heldItemOptions: FilterOption[];
+  moveOptions: FilterOption[];
   regionOptions: string[];
   showRegionFilter: boolean;
   onChange: (filters: EncounterFilters) => void;
   onReset: () => void;
+}
+
+interface FilterOption {
+  value: string;
+  label: string;
 }
 
 const sortOptions: Array<{ value: EncounterSortKey; label: string }> = [
@@ -20,16 +29,49 @@ const sortOptions: Array<{ value: EncounterSortKey; label: string }> = [
   { value: "rarity", label: "Rarity" }
 ];
 
+function getSelectedOptionLabel(options: FilterOption[], selectedValue: string): string {
+  return options.find((option) => option.value === selectedValue)?.label ?? "";
+}
+
+function findOptionByTypedLabel(options: FilterOption[], typedLabel: string): FilterOption | undefined {
+  const normalizedLabel = typedLabel.trim().toLowerCase();
+
+  if (!normalizedLabel) {
+    return undefined;
+  }
+
+  return options.find((option) => option.label.toLowerCase() === normalizedLabel);
+}
+
 export function FiltersToolbar({
   filters,
   encounterTypes,
   rarities,
   evYieldStats,
+  abilityOptions,
+  heldItemOptions,
+  moveOptions,
   regionOptions,
   showRegionFilter,
   onChange,
   onReset
 }: FiltersToolbarProps) {
+  const [abilitySearch, setAbilitySearch] = useState("");
+  const [heldItemSearch, setHeldItemSearch] = useState("");
+  const [moveSearch, setMoveSearch] = useState("");
+
+  useEffect(() => {
+    setAbilitySearch(getSelectedOptionLabel(abilityOptions, filters.abilityName));
+  }, [filters.abilityName, abilityOptions]);
+
+  useEffect(() => {
+    setHeldItemSearch(getSelectedOptionLabel(heldItemOptions, filters.heldItemId));
+  }, [filters.heldItemId, heldItemOptions]);
+
+  useEffect(() => {
+    setMoveSearch(getSelectedOptionLabel(moveOptions, filters.moveId));
+  }, [filters.moveId, moveOptions]);
+
   function updateFilter<Key extends keyof EncounterFilters>(key: Key, value: EncounterFilters[Key]) {
     onChange({ ...filters, [key]: value });
   }
@@ -40,6 +82,18 @@ export function FiltersToolbar({
       : [...filters.regionNames, regionName];
 
     updateFilter("regionNames", regionNames);
+  }
+
+  function updateSearchableFilter(
+    typedValue: string,
+    options: FilterOption[],
+    filterKey: "abilityName" | "heldItemId" | "moveId",
+    setTypedValue: (value: string) => void
+  ) {
+    const selectedOption = findOptionByTypedLabel(options, typedValue);
+
+    setTypedValue(typedValue);
+    updateFilter(filterKey, selectedOption?.value ?? "");
   }
 
   return (
@@ -108,6 +162,55 @@ export function FiltersToolbar({
             </option>
           ))}
         </select>
+      </label>
+
+      <label>
+        Ability
+        <input
+          list="ability-options"
+          value={abilitySearch}
+          onChange={(event) =>
+            updateSearchableFilter(event.target.value, abilityOptions, "abilityName", setAbilitySearch)
+          }
+          placeholder="Type an ability"
+        />
+        <datalist id="ability-options">
+          {abilityOptions.map((ability) => (
+            <option key={ability.value} value={ability.label} />
+          ))}
+        </datalist>
+      </label>
+
+      <label>
+        Held Item
+        <input
+          list="held-item-options"
+          value={heldItemSearch}
+          onChange={(event) =>
+            updateSearchableFilter(event.target.value, heldItemOptions, "heldItemId", setHeldItemSearch)
+          }
+          placeholder="Type an item"
+        />
+        <datalist id="held-item-options">
+          {heldItemOptions.map((item) => (
+            <option key={item.value} value={item.label} />
+          ))}
+        </datalist>
+      </label>
+
+      <label>
+        Move
+        <input
+          list="move-options"
+          value={moveSearch}
+          onChange={(event) => updateSearchableFilter(event.target.value, moveOptions, "moveId", setMoveSearch)}
+          placeholder="Type a move"
+        />
+        <datalist id="move-options">
+          {moveOptions.map((move) => (
+            <option key={move.value} value={move.label} />
+          ))}
+        </datalist>
       </label>
 
       <label>

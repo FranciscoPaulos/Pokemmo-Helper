@@ -3,9 +3,12 @@ import type {
   EncounterFilters,
   EvYieldStat,
   PokemonEncounter,
+  PokemonMoveReference,
   RegionRouteGroup,
   RouteEncounterGroup
 } from "../types/pokemon";
+import { getHeldItemsForPokemon } from "../data/heldItemsData";
+import { formatAbilityName } from "../features/pokemon/formatPokemon";
 import { filterAndSortEncounters } from "../lib/buildRouteIndex";
 import { groupPokemonEncounters } from "../lib/groupPokemonEncounters";
 import { sortTimesOfDay } from "../lib/locationMetadata";
@@ -24,6 +27,11 @@ interface RouteDetailsProps {
   onFiltersReset: () => void;
 }
 
+interface FilterOption {
+  value: string;
+  label: string;
+}
+
 function uniqueSorted(values: string[]): string[] {
   return Array.from(new Set(values)).sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
 }
@@ -39,6 +47,53 @@ function sortEvYieldStats(stats: EvYieldStat[]): EvYieldStat[] {
   const statSet = new Set(stats);
 
   return order.filter((stat) => statSet.has(stat));
+}
+
+function uniqueOptions(options: FilterOption[]): FilterOption[] {
+  const optionByValue = new Map<string, FilterOption>();
+
+  for (const option of options) {
+    if (!optionByValue.has(option.value)) {
+      optionByValue.set(option.value, option);
+    }
+  }
+
+  return Array.from(optionByValue.values()).sort((a, b) => a.label.localeCompare(b.label, undefined, { numeric: true }));
+}
+
+function getMoveOptions(encounters: PokemonEncounter[]): FilterOption[] {
+  return uniqueOptions(
+    encounters.flatMap((encounter) =>
+      (encounter.rawPokemon.moves ?? [])
+        .filter((move): move is PokemonMoveReference & { id: number } => typeof move.id === "number")
+        .map((move) => ({
+          value: `${move.id}`,
+          label: formatAbilityName(move.name ?? `Move ${move.id}`)
+        }))
+    )
+  );
+}
+
+function getHeldItemOptions(encounters: PokemonEncounter[]): FilterOption[] {
+  return uniqueOptions(
+    encounters.flatMap((encounter) =>
+      getHeldItemsForPokemon(encounter.pokemonId).map((heldItem) => ({
+        value: `${heldItem.id}`,
+        label: heldItem.name
+      }))
+    )
+  );
+}
+
+function getAbilityOptions(encounters: PokemonEncounter[]): FilterOption[] {
+  return uniqueOptions(
+    encounters.flatMap((encounter) =>
+      [...encounter.abilities, ...encounter.hiddenAbilities].map((ability) => ({
+        value: ability,
+        label: formatAbilityName(ability)
+      }))
+    )
+  );
 }
 
 export function RouteDetails({
@@ -77,6 +132,9 @@ export function RouteDetails({
     () => sortEvYieldStats(sourceEncounters.flatMap((encounter) => encounter.evYields.map((evYield) => evYield.stat))),
     [sourceEncounters]
   );
+  const abilityOptions = useMemo(() => getAbilityOptions(sourceEncounters), [sourceEncounters]);
+  const heldItemOptions = useMemo(() => getHeldItemOptions(sourceEncounters), [sourceEncounters]);
+  const moveOptions = useMemo(() => getMoveOptions(sourceEncounters), [sourceEncounters]);
   const timeOfDayOptions = useMemo(
     () => sortTimesOfDay(sourceEncounters.flatMap((encounter) => encounter.timeOfDay)),
     [sourceEncounters]
@@ -144,6 +202,9 @@ export function RouteDetails({
               encounterTypes={encounterTypes}
               rarities={rarities}
               evYieldStats={evYieldStats}
+              abilityOptions={abilityOptions}
+              heldItemOptions={heldItemOptions}
+              moveOptions={moveOptions}
               regionOptions={regionOptions}
               showRegionFilter={isGlobalSearch}
               onChange={onFiltersChange}

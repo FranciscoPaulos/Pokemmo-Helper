@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { getHeldItemsForPokemon } from "../data/heldItemsData";
 import type { PokemonEncounterGroup } from "../types/pokemon";
 import { formatEvYieldList, formatPokemonName, formatValue } from "../features/pokemon/formatPokemon";
 import { AbilityTooltip } from "./AbilityTooltip";
@@ -12,6 +13,7 @@ interface PokemonEncounterCardProps {
 export function PokemonEncounterCard({ encounterGroup, showRoutes = false }: PokemonEncounterCardProps) {
   const [isDetailOpen, setIsDetailOpen] = useState(false);
   const encounter = encounterGroup.pokemon;
+  const heldItems = getHeldItemsForPokemon(encounter.pokemonId);
 
   function renderAbilities(abilities: string[], fallback: string) {
     if (!abilities.length) {
@@ -100,6 +102,10 @@ export function PokemonEncounterCard({ encounterGroup, showRoutes = false }: Pok
             <div>
               <dt>Hidden Ability</dt>
               <dd>{renderAbilities(encounter.hiddenAbilities, "None")}</dd>
+            </div>
+            <div>
+              <dt>Held Items</dt>
+              <dd>{heldItems.length ? heldItems.map((item) => item.name).join(", ") : "None"}</dd>
             </div>
             <div>
               <dt>EV Yield</dt>

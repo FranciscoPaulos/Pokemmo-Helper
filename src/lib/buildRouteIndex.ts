@@ -11,6 +11,7 @@ import type {
   RouteIndex,
   TimeOfDay
 } from "../types/pokemon";
+import { getHeldItemsForPokemon } from "../data/heldItemsData";
 import { getNonTimeLocationTags, getTimeOfDayTags, sortTimesOfDay } from "./locationMetadata";
 import {
   getBaseLocation,
@@ -225,12 +226,30 @@ export function filterAndSortEncounters(
       const matchesRarity = !filters.rarity || encounter.rarity === filters.rarity;
       const matchesEvYield =
         !filters.evYieldStat || encounter.evYields.some((evYield) => evYield.stat === filters.evYieldStat);
+      const matchesAbility =
+        !filters.abilityName ||
+        [...encounter.abilities, ...encounter.hiddenAbilities].some((ability) => ability === filters.abilityName);
+      const matchesHeldItem =
+        !filters.heldItemId ||
+        getHeldItemsForPokemon(encounter.pokemonId).some((heldItem) => `${heldItem.id}` === filters.heldItemId);
+      const matchesMove =
+        !filters.moveId || encounter.rawPokemon.moves?.some((move) => `${move.id}` === filters.moveId);
       const matchesTime =
         !filters.timeOfDay ||
         (includeUntimedEncounters && encounter.timeOfDay.length === 0) ||
         encounter.timeOfDay.includes(filters.timeOfDay as TimeOfDay);
 
-      return matchesSearch && matchesRegion && matchesType && matchesRarity && matchesEvYield && matchesTime;
+      return (
+        matchesSearch &&
+        matchesRegion &&
+        matchesType &&
+        matchesRarity &&
+        matchesEvYield &&
+        matchesAbility &&
+        matchesHeldItem &&
+        matchesMove &&
+        matchesTime
+      );
     })
     .sort((a, b) => {
       const direction = filters.sortDirection === "asc" ? 1 : -1;

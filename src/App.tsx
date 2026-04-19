@@ -20,6 +20,9 @@ const defaultFilters: EncounterFilters = {
   encounterType: "",
   rarity: "",
   evYieldStat: "",
+  abilityName: "",
+  heldItemId: "",
+  moveId: "",
   timeOfDay: "",
   sortKey: "pokedexNumber",
   sortDirection: "asc"
