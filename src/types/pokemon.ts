@@ -188,6 +188,25 @@ export interface MoveDataFile {
   moves: Record<string, MoveDataRecord>;
 }
 
+export interface HeldItemReference {
+  id: number;
+  name: string;
+}
+
+export interface PokemonHeldItemsRecord {
+  id: number;
+  name: string;
+  held_items: HeldItemReference[];
+}
+
+export interface HeldItemsDataFile {
+  generated_at: string;
+  source: string;
+  pokemon_count: number;
+  pokemon_with_held_items: number;
+  pokemon: Record<string, PokemonHeldItemsRecord>;
+}
+
 export type EncounterSortKey = "pokedexNumber" | "name" | "captureRate" | "level" | "rarity";
 export type SortDirection = "asc" | "desc";
 

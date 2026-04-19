@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { getHeldItemsForPokemon } from "../data/heldItemsData";
 import { getMoveById } from "../data/moveData";
 import {
   formatAbilityName,
@@ -283,6 +284,7 @@ export function PokemonDetailModal({ encounterGroup, onClose }: PokemonDetailMod
   const typeDefenses = getDefensiveTypeEffectiveness(encounter.types).filter((entry) => entry.multiplier !== 1);
   const encounterRows = getEncounterRows(pokemon);
   const moveRows = getMoveRows(pokemon);
+  const heldItems = getHeldItemsForPokemon(encounter.pokemonId);
 
   useEffect(() => {
     function closeOnEscape(event: KeyboardEvent) {
@@ -384,6 +386,10 @@ export function PokemonDetailModal({ encounterGroup, onClose }: PokemonDetailMod
                   <div>
                     <dt>Alpha Available</dt>
                     <dd>{formatValue(pokemon.alpha)}</dd>
+                  </div>
+                  <div>
+                    <dt>Held Items</dt>
+                    <dd>{heldItems.length ? heldItems.map((item) => item.name).join(", ") : "None"}</dd>
                   </div>
                 </dl>
               </section>
