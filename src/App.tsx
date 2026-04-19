@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { AppShell } from "./components/AppShell";
 import { EmptyState } from "./components/EmptyState";
 import { MapViewer } from "./components/MapViewer";
+import { PokedexPanel } from "./components/PokedexPanel";
 import { RegionSelector } from "./components/RegionSelector";
 import { RouteDetails } from "./components/RouteDetails";
 import { RouteList } from "./components/RouteList";
@@ -13,6 +14,8 @@ import { getInitialRegion, getInitialRoute, sortRegionsByGeneration } from "./fe
 import { buildRouteIndex } from "./lib/buildRouteIndex";
 import { normalizeLocationKey } from "./lib/normalizeLocation";
 import type { EncounterFilters, RegionRouteGroup, RouteEncounterGroup } from "./types/pokemon";
+
+type AppMode = "routeMaster" | "pokedex";
 
 const defaultFilters: EncounterFilters = {
   search: "",
@@ -38,11 +41,14 @@ function App() {
   const [selectedRegion, setSelectedRegion] = useState<RegionRouteGroup | undefined>();
   const [selectedRoute, setSelectedRoute] = useState<RouteEncounterGroup | undefined>();
   const [filters, setFilters] = useState<EncounterFilters>(defaultFilters);
+  const [pokedexFilters, setPokedexFilters] = useState<EncounterFilters>(defaultFilters);
+  const [appMode, setAppMode] = useState<AppMode>("routeMaster");
   const [theme, setTheme] = useState<"light" | "dark">(() => getStoredTheme());
 
   const dataState = useMemo(() => {
     try {
-      const baseRouteIndex = buildRouteIndex(getPokemonRecords());
+      const pokemonRecords = getPokemonRecords();
+      const baseRouteIndex = buildRouteIndex(pokemonRecords);
 
       for (const region of baseRouteIndex.regions) {
         for (const routeMap of Object.values(routeMapsByRouteKey)) {
@@ -74,17 +80,19 @@ function App() {
 
       return {
         routeIndex: baseRouteIndex,
+        pokemonRecords,
         loadError: null
       };
     } catch (error) {
       return {
         routeIndex: buildRouteIndex([]),
+        pokemonRecords: [],
         loadError: error instanceof Error ? error.message : "Unable to parse Pokemon encounter data."
       };
     }
   }, []);
 
-  const { routeIndex, loadError } = dataState;
+  const { routeIndex, pokemonRecords, loadError } = dataState;
 
   useEffect(() => {
     const initialRegion = getInitialRegion(routeIndex.regions);
@@ -124,45 +132,88 @@ function App() {
         <>
           <div className="brand-block">
             <span>PokeMMO</span>
-            <h1>Encounter Companion</h1>
+            <h1>Pokemmo Helper</h1>
             <ThemeToggle
               isDarkMode={theme === "dark"}
               onToggle={() => setTheme((currentTheme) => (currentTheme === "dark" ? "light" : "dark"))}
             />
           </div>
 
-          <RegionSelector
-            regions={routeIndex.regions}
-            selectedRegionKey={selectedRegion?.regionKey}
-            onRegionSelect={handleRegionSelect}
-          />
+          <nav className="app-mode-tabs" aria-label="App sections">
+            <button
+              className={appMode === "routeMaster" ? "is-selected" : ""}
+              type="button"
+              onClick={() => setAppMode("routeMaster")}
+            >
+              Route Master
+            </button>
+            <button
+              className={appMode === "pokedex" ? "is-selected" : ""}
+              type="button"
+              onClick={() => setAppMode("pokedex")}
+            >
+              Pokedex
+            </button>
+          </nav>
 
-          <RouteList
-            region={selectedRegion}
-            selectedRouteKey={selectedRoute?.routeKey}
-            onRouteClear={handleRouteClear}
-            onRouteSelect={handleRouteSelect}
-          />
+          {appMode === "routeMaster" ? (
+            <>
+              <RegionSelector
+                regions={routeIndex.regions}
+                selectedRegionKey={selectedRegion?.regionKey}
+                onRegionSelect={handleRegionSelect}
+              />
+
+              <RouteList
+                region={selectedRegion}
+                selectedRouteKey={selectedRoute?.routeKey}
+                onRouteClear={handleRouteClear}
+                onRouteSelect={handleRouteSelect}
+              />
+            </>
+          ) : (
+            <div className="sidebar-note">
+              <p className="eyebrow">Pokedex</p>
+              <p>Search all Pokemon in the local data, including entries without wild encounters.</p>
+            </div>
+          )}
         </>
       }
       map={
-        <MapViewer
-          region={selectedRegion}
-          selectedRoute={selectedRoute}
-          mapConfig={mapConfig}
-          onRouteSelect={handleRouteSelect}
-        />
+        appMode === "routeMaster" ? (
+          <MapViewer
+            region={selectedRegion}
+            selectedRoute={selectedRoute}
+            mapConfig={mapConfig}
+            onRouteSelect={handleRouteSelect}
+          />
+        ) : (
+          <div className="map-stage map-stage--empty">
+            <p className="eyebrow">Pokedex</p>
+            <h1>All Pokemon</h1>
+            <p>Use the center panel to search species, abilities, moves, held items, and EV yields.</p>
+          </div>
+        )
       }
       details={
-        <RouteDetails
-          regions={routeIndex.regions}
-          region={selectedRegion}
-          route={selectedRoute}
-          filters={filters}
-          onClearRoute={handleRouteClear}
-          onFiltersChange={setFilters}
-          onFiltersReset={() => setFilters(defaultFilters)}
-        />
+        appMode === "routeMaster" ? (
+          <RouteDetails
+            regions={routeIndex.regions}
+            region={selectedRegion}
+            route={selectedRoute}
+            filters={filters}
+            onClearRoute={handleRouteClear}
+            onFiltersChange={setFilters}
+            onFiltersReset={() => setFilters(defaultFilters)}
+          />
+        ) : (
+          <PokedexPanel
+            pokemonRecords={pokemonRecords}
+            filters={pokedexFilters}
+            onFiltersChange={setPokedexFilters}
+            onFiltersReset={() => setPokedexFilters(defaultFilters)}
+          />
+        )
       }
     />
   );

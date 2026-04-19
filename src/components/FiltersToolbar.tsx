@@ -11,6 +11,7 @@ interface FiltersToolbarProps {
   heldItemOptions: FilterOption[];
   moveOptions: FilterOption[];
   regionOptions: string[];
+  showEncounterFilters?: boolean;
   showRegionFilter: boolean;
   onChange: (filters: EncounterFilters) => void;
   onReset: () => void;
@@ -52,6 +53,7 @@ export function FiltersToolbar({
   heldItemOptions,
   moveOptions,
   regionOptions,
+  showEncounterFilters = true,
   showRegionFilter,
   onChange,
   onReset
@@ -125,29 +127,36 @@ export function FiltersToolbar({
         </fieldset>
       ) : null}
 
-      <label>
-        Encounter
-        <select value={filters.encounterType} onChange={(event) => updateFilter("encounterType", event.target.value)}>
-          <option value="">All types</option>
-          {encounterTypes.map((type) => (
-            <option key={type} value={type}>
-              {type}
-            </option>
-          ))}
-        </select>
-      </label>
+      {showEncounterFilters ? (
+        <>
+          <label>
+            Encounter
+            <select
+              value={filters.encounterType}
+              onChange={(event) => updateFilter("encounterType", event.target.value)}
+            >
+              <option value="">All types</option>
+              {encounterTypes.map((type) => (
+                <option key={type} value={type}>
+                  {type}
+                </option>
+              ))}
+            </select>
+          </label>
 
-      <label>
-        Rarity
-        <select value={filters.rarity} onChange={(event) => updateFilter("rarity", event.target.value)}>
-          <option value="">All rarities</option>
-          {rarities.map((rarity) => (
-            <option key={rarity} value={rarity}>
-              {rarity}
-            </option>
-          ))}
-        </select>
-      </label>
+          <label>
+            Rarity
+            <select value={filters.rarity} onChange={(event) => updateFilter("rarity", event.target.value)}>
+              <option value="">All rarities</option>
+              {rarities.map((rarity) => (
+                <option key={rarity} value={rarity}>
+                  {rarity}
+                </option>
+              ))}
+            </select>
+          </label>
+        </>
+      ) : null}
 
       <label>
         EV Yield

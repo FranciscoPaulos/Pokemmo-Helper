@@ -1,9 +1,6 @@
 import type {
   EncounterFilters,
   LocationAreaEncounter,
-  EvYield,
-  EvYieldStat,
-  PokemonAbilitySlot,
   PokemonEncounter,
   PokemonJsonRecord,
   RegionRouteGroup,
@@ -20,72 +17,18 @@ import {
   normalizeDisplayLocation,
   normalizeLocationKey
 } from "./normalizeLocation";
+import {
+  getCaptureRate,
+  getHiddenPokemonAbilities,
+  getPokemonAbilities,
+  getPokemonEvYields,
+  getPokemonSprite,
+  getPokemonTypes
+} from "./pokemonFields";
 
 const DEFAULT_REGION = "Unknown Region";
 const DEFAULT_ENCOUNTER_TYPE = "Unknown";
 const DEFAULT_RARITY = "Unknown";
-
-function getPokemonSprite(pokemon: PokemonJsonRecord): string | undefined {
-  if (!pokemon.sprites) {
-    return undefined;
-  }
-
-  return (
-    pokemon.sprites.front_default ??
-    pokemon.sprites.official_artwork ??
-    pokemon.sprites.front_shiny ??
-    undefined
-  );
-}
-
-function getCaptureRate(pokemon: PokemonJsonRecord): number | undefined {
-  return pokemon.capture_rate ?? pokemon.catch_rate;
-}
-
-function getPokemonTypes(pokemon: PokemonJsonRecord): string[] {
-  return (pokemon.types ?? [])
-    .map((entry) => {
-      if (typeof entry === "string") {
-        return entry;
-      }
-
-      return entry.type?.name ?? entry.name;
-    })
-    .filter((type): type is string => Boolean(type));
-}
-
-function getPokemonAbilities(pokemon: PokemonJsonRecord): string[] {
-  return (pokemon.abilities ?? [])
-    .filter((entry) => typeof entry === "string" || !entry.is_hidden)
-    .map((entry) => {
-      if (typeof entry === "string") {
-        return entry;
-      }
-
-      return entry.ability?.name ?? entry.ability_name ?? entry.name;
-    })
-    .filter((ability): ability is string => Boolean(ability));
-}
-
-function getHiddenPokemonAbilities(pokemon: PokemonJsonRecord): string[] {
-  return (pokemon.abilities ?? [])
-    .filter((entry): entry is PokemonAbilitySlot => typeof entry !== "string" && Boolean(entry.is_hidden))
-    .map((entry) => entry.ability?.name ?? entry.ability_name ?? entry.name)
-    .filter((ability): ability is string => Boolean(ability));
-}
-
-function isEvYieldStat(statName: string): statName is EvYieldStat {
-  return ["hp", "attack", "defense", "special-attack", "special-defense", "speed"].includes(statName);
-}
-
-function getPokemonEvYields(pokemon: PokemonJsonRecord): EvYield[] {
-  return (pokemon.stats ?? [])
-    .filter((stat) => typeof stat.effort === "number" && stat.effort > 0)
-    .flatMap((stat) => {
-      const statName = stat.stat_name ?? stat.stat?.name ?? "unknown";
-      return isEvYieldStat(statName) ? [{ stat: statName, amount: stat.effort as number }] : [];
-    });
-}
 
 function numericRarityValue(rarity: string): number {
   const rarityOrder: Record<string, number> = {

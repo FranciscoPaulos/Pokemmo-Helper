@@ -202,6 +202,53 @@ button {
   outline: none;
 }
 
+.app-mode-tabs {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 0 22px;
+}
+
+.app-mode-tabs button {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 8px;
+  color: inherit;
+  font-weight: 900;
+  min-height: 38px;
+  padding: 8px 10px;
+}
+
+.app-mode-tabs button.is-selected {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-text);
+}
+
+.app-mode-tabs button:hover,
+.app-mode-tabs button:focus-visible {
+  background: rgba(255, 255, 255, 0.14);
+  outline: none;
+}
+
+.app-mode-tabs button.is-selected:hover,
+.app-mode-tabs button.is-selected:focus-visible {
+  background: var(--accent);
+}
+
+.sidebar-note {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 8px;
+  color: var(--sidebar-text);
+  padding: 14px;
+}
+
+.sidebar-note p:last-child {
+  color: rgba(247, 251, 249, 0.78);
+  line-height: 1.45;
+  margin: 0;
+}
+
 .region-selector,
 .route-list {
   margin-top: 20px;
