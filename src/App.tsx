@@ -7,6 +7,7 @@ import { RegionSelector } from "./components/RegionSelector";
 import { RouteDetails } from "./components/RouteDetails";
 import { RouteList } from "./components/RouteList";
 import { ThemeToggle } from "./components/ThemeToggle";
+import { WorldTracker } from "./components/WorldTracker";
 import { getPokemonRecords } from "./data/pokemonData";
 import { routeHotspotsByRegion } from "./data/routeHotspots";
 import { routeMapsByRouteKey } from "./data/routeMaps";
@@ -27,6 +28,7 @@ const defaultFilters: EncounterFilters = {
   heldItemId: "",
   moveId: "",
   timeOfDay: "",
+  season: "",
   sortKey: "pokedexNumber",
   sortDirection: "asc"
 };
@@ -66,7 +68,8 @@ function App() {
             encounters: [],
             encounterTypes: [],
             rarities: [],
-            timeOfDayOptions: []
+            timeOfDayOptions: [],
+            seasonOptions: []
           };
 
           region.routes.push(navigationRoute);
@@ -137,6 +140,7 @@ function App() {
               isDarkMode={theme === "dark"}
               onToggle={() => setTheme((currentTheme) => (currentTheme === "dark" ? "light" : "dark"))}
             />
+            <WorldTracker />
           </div>
 
           <nav className="app-mode-tabs" aria-label="App sections">

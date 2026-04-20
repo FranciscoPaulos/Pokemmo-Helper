@@ -75,6 +75,7 @@ export interface PokemonJsonRecord {
 
 export type PokemonJsonDictionary = Record<string, Partial<PokemonJsonRecord>>;
 export type TimeOfDay = "Morning" | "Day" | "Night";
+export type Season = "Spring" | "Summer" | "Autumn" | "Winter";
 export type EvYieldStat = "hp" | "attack" | "defense" | "special-attack" | "special-defense" | "speed";
 
 export interface EvYield {
@@ -104,6 +105,7 @@ export interface PokemonEncounter {
   maxLevel?: number;
   rarity: string;
   timeOfDay: TimeOfDay[];
+  seasons: Season[];
   locationTags: string[];
   rawPokemon: PokemonJsonRecord;
   rawEncounter: LocationAreaEncounter;
@@ -121,6 +123,7 @@ export interface PokemonEncounterGroup {
     routeNames: string[];
   }>;
   timeOfDay: TimeOfDay[];
+  seasons: Season[];
   minLevel?: number;
   maxLevel?: number;
 }
@@ -136,6 +139,7 @@ export interface RouteEncounterGroup {
   encounterTypes: string[];
   rarities: string[];
   timeOfDayOptions: TimeOfDay[];
+  seasonOptions: Season[];
   minLevel?: number;
   maxLevel?: number;
 }
@@ -220,6 +224,7 @@ export interface EncounterFilters {
   heldItemId: string;
   moveId: string;
   timeOfDay: TimeOfDay | "";
+  season: Season | "";
   sortKey: EncounterSortKey;
   sortDirection: SortDirection;
 }

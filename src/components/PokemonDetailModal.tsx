@@ -9,13 +9,15 @@ import {
   formatValue
 } from "../features/pokemon/formatPokemon";
 import { getDefensiveTypeEffectiveness } from "../lib/typeEffectiveness";
-import { normalizeDisplayLocation } from "../lib/normalizeLocation";
+import { getSeasonTags, sortSeasons } from "../lib/locationMetadata";
+import { getBaseLocation, normalizeDisplayLocation } from "../lib/normalizeLocation";
 import type {
   LocationAreaEncounter,
   MoveDataRecord,
   PokemonEncounterGroup,
   PokemonJsonRecord,
   PokemonMoveReference,
+  Season,
   PokemonStatSlot
 } from "../types/pokemon";
 import { AbilityTooltip } from "./AbilityTooltip";
@@ -218,21 +220,40 @@ function getMoveRows(pokemon: PokemonJsonRecord): Array<{ reference: PokemonMove
     }));
 }
 
+function getMergedEncounterSeasons(encounter: LocationAreaEncounter): Season[] {
+  const seasons = encounter.seasons;
+
+  return Array.isArray(seasons) && seasons.every((season) => typeof season === "string")
+    ? (seasons as Season[])
+    : getSeasonTags(encounter.location);
+}
+
 function getEncounterRows(pokemon: PokemonJsonRecord): LocationAreaEncounter[] {
-  const encounterByDisplayKey = new Map<string, LocationAreaEncounter>();
+  const encounterByDisplayKey = new Map<string, LocationAreaEncounter & { seasons?: Season[] }>();
 
   for (const encounter of pokemon.location_area_encounters ?? []) {
+    const baseLocation = getBaseLocation(encounter.location);
     const displayKey = [
       normalizeDisplayLocation(encounter.region_name ?? "Unknown"),
-      normalizeDisplayLocation(encounter.location),
+      normalizeDisplayLocation(baseLocation),
       encounter.type ?? "",
       encounter.min_level ?? "",
       encounter.max_level ?? "",
       encounter.rarity ?? ""
     ].join("|");
+    const existingEncounter = encounterByDisplayKey.get(displayKey);
 
-    if (!encounterByDisplayKey.has(displayKey)) {
-      encounterByDisplayKey.set(displayKey, encounter);
+    if (existingEncounter) {
+      existingEncounter.seasons = sortSeasons([
+        ...getMergedEncounterSeasons(existingEncounter),
+        ...getSeasonTags(encounter.location)
+      ]);
+    } else {
+      encounterByDisplayKey.set(displayKey, {
+        ...encounter,
+        location: baseLocation,
+        seasons: getSeasonTags(encounter.location)
+      });
     }
   }
 
@@ -506,6 +527,7 @@ export function PokemonDetailModal({ encounterGroup, onClose }: PokemonDetailMod
                     <th>Location</th>
                     <th>Levels</th>
                     <th>Rarity</th>
+                    <th>Season</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -518,6 +540,7 @@ export function PokemonDetailModal({ encounterGroup, onClose }: PokemonDetailMod
                         {formatValue(row.min_level)}-{formatValue(row.max_level)}
                       </td>
                       <td>{formatValue(row.rarity)}</td>
+                      <td>{getMergedEncounterSeasons(row).join(", ") || "Any"}</td>
                     </tr>
                   ))}
                 </tbody>

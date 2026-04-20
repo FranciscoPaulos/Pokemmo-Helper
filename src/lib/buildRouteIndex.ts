@@ -6,10 +6,11 @@ import type {
   RegionRouteGroup,
   RouteEncounterGroup,
   RouteIndex,
+  Season,
   TimeOfDay
 } from "../types/pokemon";
 import { getHeldItemsForPokemon } from "../data/heldItemsData";
-import { getNonTimeLocationTags, getTimeOfDayTags, sortTimesOfDay } from "./locationMetadata";
+import { getNonTimeLocationTags, getSeasonTags, getTimeOfDayTags, sortSeasons, sortTimesOfDay } from "./locationMetadata";
 import {
   getBaseLocation,
   makeRegionKey,
@@ -77,6 +78,7 @@ function buildEncounter(pokemon: PokemonJsonRecord, encounter: LocationAreaEncou
     maxLevel: encounter.max_level,
     rarity: `${encounter.rarity ?? DEFAULT_RARITY}`,
     timeOfDay: getTimeOfDayTags(encounter.location),
+    seasons: getSeasonTags(encounter.location),
     locationTags: getNonTimeLocationTags(encounter.location),
     rawPokemon: pokemon,
     rawEncounter: encounter
@@ -115,7 +117,8 @@ export function buildRouteIndex(pokemonRecords: PokemonJsonRecord[]): RouteIndex
           encounters: [],
           encounterTypes: [],
           rarities: [],
-          timeOfDayOptions: []
+          timeOfDayOptions: [],
+          seasonOptions: []
         };
         regionByKey[regionKey].routes.push(routeByKey[routeKey]);
       }
@@ -134,6 +137,7 @@ export function buildRouteIndex(pokemonRecords: PokemonJsonRecord[]): RouteIndex
         (a, b) => numericRarityValue(a) - numericRarityValue(b)
       );
       route.timeOfDayOptions = sortTimesOfDay(route.encounters.flatMap((encounter) => encounter.timeOfDay));
+      route.seasonOptions = sortSeasons(route.encounters.flatMap((encounter) => encounter.seasons));
 
       const levels = route.encounters.flatMap((encounter) => [encounter.minLevel, encounter.maxLevel]).filter(
         (level): level is number => typeof level === "number"
@@ -181,6 +185,10 @@ export function filterAndSortEncounters(
         !filters.timeOfDay ||
         (includeUntimedEncounters && encounter.timeOfDay.length === 0) ||
         encounter.timeOfDay.includes(filters.timeOfDay as TimeOfDay);
+      const matchesSeason =
+        !filters.season ||
+        (includeUntimedEncounters && encounter.seasons.length === 0) ||
+        encounter.seasons.includes(filters.season as Season);
 
       return (
         matchesSearch &&
@@ -191,7 +199,8 @@ export function filterAndSortEncounters(
         matchesAbility &&
         matchesHeldItem &&
         matchesMove &&
-        matchesTime
+        matchesTime &&
+        matchesSeason
       );
     })
     .sort((a, b) => {

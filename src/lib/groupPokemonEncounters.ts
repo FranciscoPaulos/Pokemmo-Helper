@@ -1,5 +1,5 @@
-import type { PokemonEncounter, PokemonEncounterGroup, TimeOfDay } from "../types/pokemon";
-import { sortTimesOfDay } from "./locationMetadata";
+import type { PokemonEncounter, PokemonEncounterGroup, Season, TimeOfDay } from "../types/pokemon";
+import { sortSeasons, sortTimesOfDay } from "./locationMetadata";
 
 const regionOrder = ["Kanto", "Johto", "Hoenn", "Sinnoh", "Unova"];
 
@@ -55,6 +55,7 @@ export function groupPokemonEncounters(encounters: PokemonEncounter[]): PokemonE
       .flatMap((encounter) => [encounter.minLevel, encounter.maxLevel])
       .filter((level): level is number => typeof level === "number");
     const timeOfDay = sortTimesOfDay(groupedEncounters.flatMap((encounter) => encounter.timeOfDay as TimeOfDay[]));
+    const seasons = sortSeasons(groupedEncounters.flatMap((encounter) => encounter.seasons as Season[]));
 
     return {
       groupKey,
@@ -65,6 +66,7 @@ export function groupPokemonEncounters(encounters: PokemonEncounter[]): PokemonE
       routeNames: uniqueSorted(groupedEncounters.map((encounter) => `${encounter.regionName}: ${encounter.location}`)),
       routeRegions: groupRoutesByRegion(groupedEncounters),
       timeOfDay,
+      seasons,
       minLevel: levels.length ? Math.min(...levels) : undefined,
       maxLevel: levels.length ? Math.max(...levels) : undefined
     };

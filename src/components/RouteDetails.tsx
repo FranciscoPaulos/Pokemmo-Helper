@@ -5,15 +5,17 @@ import type {
   PokemonEncounter,
   PokemonMoveReference,
   RegionRouteGroup,
-  RouteEncounterGroup
+  RouteEncounterGroup,
+  Season
 } from "../types/pokemon";
 import { getHeldItemsForPokemon } from "../data/heldItemsData";
 import { formatAbilityName } from "../features/pokemon/formatPokemon";
 import { filterAndSortEncounters } from "../lib/buildRouteIndex";
 import { groupPokemonEncounters } from "../lib/groupPokemonEncounters";
-import { sortTimesOfDay } from "../lib/locationMetadata";
+import { sortSeasons, sortTimesOfDay } from "../lib/locationMetadata";
 import { EmptyState } from "./EmptyState";
 import { FiltersToolbar } from "./FiltersToolbar";
+import { OptionToggle } from "./OptionToggle";
 import { PokemonEncounterCard } from "./PokemonEncounterCard";
 import { TimeOfDayToggle } from "./TimeOfDayToggle";
 
@@ -139,6 +141,10 @@ export function RouteDetails({
     () => sortTimesOfDay(sourceEncounters.flatMap((encounter) => encounter.timeOfDay)),
     [sourceEncounters]
   );
+  const seasonOptions = useMemo(
+    () => sortSeasons(sourceEncounters.flatMap((encounter) => encounter.seasons)),
+    [sourceEncounters]
+  );
   const minLevel = route?.minLevel ?? (levels.length ? Math.min(...levels) : undefined);
   const maxLevel = route?.maxLevel ?? (levels.length ? Math.max(...levels) : undefined);
   const regionOptions = useMemo(() => regions.map((searchRegion) => searchRegion.displayName), [regions]);
@@ -164,7 +170,9 @@ export function RouteDetails({
         <div>
           <p className="eyebrow">{eyebrow}</p>
           <h2>{panelTitle}</h2>
-          {timeOfDayOptions.length ? <p className="route-subtitle">Time-specific encounters available</p> : null}
+          {timeOfDayOptions.length || seasonOptions.length ? (
+            <p className="route-subtitle">Time or season-specific encounters available</p>
+          ) : null}
         </div>
         <div className="route-details__actions">
           {route ? (
@@ -195,6 +203,13 @@ export function RouteDetails({
               options={timeOfDayOptions}
               selectedTime={filters.timeOfDay}
               onChange={(timeOfDay) => onFiltersChange({ ...filters, timeOfDay })}
+            />
+
+            <OptionToggle<Season>
+              label="Season"
+              options={seasonOptions}
+              selectedValue={filters.season}
+              onChange={(season) => onFiltersChange({ ...filters, season })}
             />
 
             <FiltersToolbar

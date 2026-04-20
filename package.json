@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "sync:pokemmodex": "node scripts/sync-pokemmodex-data.mjs"
   },
   "dependencies": {
     "react": "^18.2.0",

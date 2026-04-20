@@ -100,6 +100,10 @@ export function PokemonEncounterCard({ encounterGroup, showRoutes = false }: Pok
               <dd>{encounterGroup.timeOfDay.length ? encounterGroup.timeOfDay.join(", ") : "Any"}</dd>
             </div>
             <div>
+              <dt>Season</dt>
+              <dd>{encounterGroup.seasons.length ? encounterGroup.seasons.join(", ") : "Any"}</dd>
+            </div>
+            <div>
               <dt>Hidden Ability</dt>
               <dd>{renderAbilities(encounter.hiddenAbilities, "None")}</dd>
             </div>

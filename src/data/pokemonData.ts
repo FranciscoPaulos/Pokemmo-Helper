@@ -1,4 +1,4 @@
-import rawPokemonData from "../../pokedex json.json";
+import rawPokemonData from "./pokemmoDexData.json";
 import type { PokemonJsonDictionary, PokemonJsonRecord } from "../types/pokemon";
 
 function isPokemonDictionary(value: unknown): value is PokemonJsonDictionary {

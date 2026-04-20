@@ -13,6 +13,7 @@ import {
   getPokemonSprite,
   getPokemonTypes
 } from "../../lib/pokemonFields";
+import { getBaseLocation, normalizeDisplayLocation } from "../../lib/normalizeLocation";
 
 function buildPokedexEncounter(pokemon: PokemonJsonRecord): PokemonEncounter {
   return {
@@ -35,6 +36,7 @@ function buildPokedexEncounter(pokemon: PokemonJsonRecord): PokemonEncounter {
     encounterType: pokemon.location_area_encounters?.length ? "Wild" : "Unavailable",
     rarity: pokemon.location_area_encounters?.length ? "Known" : "Unavailable",
     timeOfDay: [],
+    seasons: [],
     locationTags: [],
     rawPokemon: pokemon,
     rawEncounter: {
@@ -79,10 +81,10 @@ function getPokedexGroup(pokemon: PokemonJsonRecord): PokemonEncounterGroup {
   const routeRegionsByName = new Map<string, Set<string>>();
 
   for (const rawEncounter of pokemon.location_area_encounters ?? []) {
-    const regionName = `${rawEncounter.region_name ?? "Unknown"}`;
+    const regionName = normalizeDisplayLocation(`${rawEncounter.region_name ?? "Unknown"}`);
     const routeNames = routeRegionsByName.get(regionName) ?? new Set<string>();
 
-    routeNames.add(rawEncounter.location);
+    routeNames.add(normalizeDisplayLocation(getBaseLocation(rawEncounter.location)));
     routeRegionsByName.set(regionName, routeNames);
   }
 
@@ -102,6 +104,7 @@ function getPokedexGroup(pokemon: PokemonJsonRecord): PokemonEncounterGroup {
     ),
     routeRegions,
     timeOfDay: [],
+    seasons: [],
     minLevel: levels.length ? Math.min(...levels) : undefined,
     maxLevel: levels.length ? Math.max(...levels) : undefined
   };
