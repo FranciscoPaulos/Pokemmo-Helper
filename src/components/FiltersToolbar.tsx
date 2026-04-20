@@ -6,6 +6,7 @@ interface FiltersToolbarProps {
   filters: EncounterFilters;
   encounterTypes: string[];
   rarities: string[];
+  hordeSizeOptions: Array<3 | 5>;
   evYieldStats: EvYieldStat[];
   abilityOptions: FilterOption[];
   heldItemOptions: FilterOption[];
@@ -48,6 +49,7 @@ export function FiltersToolbar({
   filters,
   encounterTypes,
   rarities,
+  hordeSizeOptions,
   evYieldStats,
   abilityOptions,
   heldItemOptions,
@@ -155,7 +157,25 @@ export function FiltersToolbar({
               ))}
             </select>
           </label>
+
         </>
+      ) : null}
+
+      {hordeSizeOptions.length ? (
+        <label>
+          Horde Size
+          <select
+            value={filters.hordeSize}
+            onChange={(event) => updateFilter("hordeSize", event.target.value as EncounterFilters["hordeSize"])}
+          >
+            <option value="">All hordes</option>
+            {hordeSizeOptions.map((hordeSize) => (
+              <option key={hordeSize} value={`${hordeSize}`}>
+                x{hordeSize}
+              </option>
+            ))}
+          </select>
+        </label>
       ) : null}
 
       <label>

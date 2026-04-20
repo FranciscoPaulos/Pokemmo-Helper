@@ -23,6 +23,7 @@ const defaultFilters: EncounterFilters = {
   regionNames: [],
   encounterType: "",
   rarity: "",
+  hordeSize: "",
   evYieldStat: "",
   abilityName: "",
   heldItemId: "",

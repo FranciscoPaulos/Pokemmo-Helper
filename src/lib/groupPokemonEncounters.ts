@@ -56,6 +56,9 @@ export function groupPokemonEncounters(encounters: PokemonEncounter[]): PokemonE
       .filter((level): level is number => typeof level === "number");
     const timeOfDay = sortTimesOfDay(groupedEncounters.flatMap((encounter) => encounter.timeOfDay as TimeOfDay[]));
     const seasons = sortSeasons(groupedEncounters.flatMap((encounter) => encounter.seasons as Season[]));
+    const hordeSizes = Array.from(
+      new Set(groupedEncounters.map((encounter) => encounter.hordeSize).filter((size): size is 3 | 5 => Boolean(size)))
+    ).sort((a, b) => a - b);
 
     return {
       groupKey,
@@ -63,6 +66,7 @@ export function groupPokemonEncounters(encounters: PokemonEncounter[]): PokemonE
       encounters: groupedEncounters,
       encounterTypes: uniqueSorted(groupedEncounters.map((encounter) => encounter.encounterType)),
       rarities: uniqueSorted(groupedEncounters.map((encounter) => encounter.rarity)),
+      hordeSizes,
       routeNames: uniqueSorted(groupedEncounters.map((encounter) => `${encounter.regionName}: ${encounter.location}`)),
       routeRegions: groupRoutesByRegion(groupedEncounters),
       timeOfDay,

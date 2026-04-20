@@ -1,0 +1,7576 @@
+{
+  "generated_at": "2026-04-20T21:32:04.877Z",
+  "source": "https://forums.pokemmo.com/index.php?/topic/108705-2025-all-horde-locations-ev-and-shiny/",
+  "parser_notes": [
+    "Generated from the public PokeMMO forum guide text.",
+    "Location headers define a default horde size.",
+    "Pokemon rows with explicit x3/x5 override the location default."
+  ],
+  "location_count": 227,
+  "encounter_count": 630,
+  "regions": {
+    "Kanto": [
+      {
+        "location": "Route 4",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Rattata",
+            "pokemon_names": [
+              "Rattata"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Rattata"
+          },
+          {
+            "pokemon_text": "Spearow",
+            "pokemon_names": [
+              "Spearow"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Spearow"
+          },
+          {
+            "pokemon_text": "Goldeen",
+            "pokemon_names": [
+              "Goldeen"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Goldeen x5"
+          }
+        ]
+      },
+      {
+        "location": "Route 5",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Pidgey",
+            "pokemon_names": [
+              "Pidgey"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Pidgey"
+          },
+          {
+            "pokemon_text": "Mankey",
+            "pokemon_names": [
+              "Mankey"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Mankey"
+          },
+          {
+            "pokemon_text": "Meowth",
+            "pokemon_names": [
+              "Meowth"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Meowth"
+          }
+        ]
+      },
+      {
+        "location": "Route 6",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Magnemite",
+            "pokemon_names": [
+              "Magnemite"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Magnemite"
+          },
+          {
+            "pokemon_text": "Drowzee (Night)",
+            "pokemon_names": [
+              "Drowzee"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Drowzee (Night)"
+          },
+          {
+            "pokemon_text": "Psyduck",
+            "pokemon_names": [
+              "Psyduck"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Psyduck x5"
+          },
+          {
+            "pokemon_text": "Slowpoke",
+            "pokemon_names": [
+              "Slowpoke"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Slowpoke x5"
+          }
+        ]
+      },
+      {
+        "location": "Route 7",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Rattata",
+            "pokemon_names": [
+              "Rattata"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Rattata"
+          },
+          {
+            "pokemon_text": "Vulpix (Morning)",
+            "pokemon_names": [
+              "Vulpix"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Vulpix (Morning)"
+          },
+          {
+            "pokemon_text": "Growlithe (Day)",
+            "pokemon_names": [
+              "Growlithe"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Growlithe (Day)"
+          },
+          {
+            "pokemon_text": "Houndour (Night)",
+            "pokemon_names": [
+              "Houndour"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Houndour (Night)"
+          }
+        ]
+      },
+      {
+        "location": "Route 8",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Pidgey (Day)",
+            "pokemon_names": [
+              "Pidgey"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Pidgey (Day)"
+          },
+          {
+            "pokemon_text": "Vulpix (Night/Morning)",
+            "pokemon_names": [
+              "Vulpix"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Vulpix (Night/Morning)"
+          },
+          {
+            "pokemon_text": "Growlithe (Day/Morning)",
+            "pokemon_names": [
+              "Growlithe"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Growlithe (Day/Morning)"
+          },
+          {
+            "pokemon_text": "Hoothoot (Night)",
+            "pokemon_names": [
+              "Hoothoot"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Hoothoot (Night)"
+          }
+        ]
+      },
+      {
+        "location": "Route 9",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Rattata",
+            "pokemon_names": [
+              "Rattata"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Rattata"
+          },
+          {
+            "pokemon_text": "Spearow",
+            "pokemon_names": [
+              "Spearow"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Spearow"
+          }
+        ]
+      },
+      {
+        "location": "Route 10",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Magnemite",
+            "pokemon_names": [
+              "Magnemite"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Magnemite"
+          },
+          {
+            "pokemon_text": "Voltorb",
+            "pokemon_names": [
+              "Voltorb"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Voltorb"
+          },
+          {
+            "pokemon_text": "Goldeen",
+            "pokemon_names": [
+              "Goldeen"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Goldeen x5"
+          }
+        ]
+      },
+      {
+        "location": "Route 11",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Drowzee",
+            "pokemon_names": [
+              "Drowzee"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Drowzee"
+          }
+        ]
+      },
+      {
+        "location": "Route 12",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Krabby",
+            "pokemon_names": [
+              "Krabby"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Krabby"
+          },
+          {
+            "pokemon_text": "Pidgey",
+            "pokemon_names": [
+              "Pidgey"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Pidgey"
+          },
+          {
+            "pokemon_text": "Venonat(Night)",
+            "pokemon_names": [
+              "Venonat"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Venonat(Night)"
+          },
+          {
+            "pokemon_text": "Slowpoke",
+            "pokemon_names": [
+              "Slowpoke"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Slowpoke x5"
+          }
+        ]
+      },
+      {
+        "location": "Route 13",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Bellsprout",
+            "pokemon_names": [
+              "Bellsprout"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Bellsprout"
+          },
+          {
+            "pokemon_text": "Oddish (Night)",
+            "pokemon_names": [
+              "Oddish"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Oddish (Night)"
+          }
+        ]
+      },
+      {
+        "location": "Route 14",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Nidorina",
+            "pokemon_names": [
+              "Nidorina"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10HP"
+            ],
+            "notes": "Nidorina 10HP"
+          }
+        ]
+      },
+      {
+        "location": "Route 15",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Nidorino",
+            "pokemon_names": [
+              "Nidorino"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10ATK"
+            ],
+            "notes": "Nidorino 10ATK"
+          }
+        ]
+      },
+      {
+        "location": "Route 16",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Raticate",
+            "pokemon_names": [
+              "Raticate"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Raticate"
+          },
+          {
+            "pokemon_text": "Grimer",
+            "pokemon_names": [
+              "Grimer"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Grimer"
+          }
+        ]
+      },
+      {
+        "location": "Route 17",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Raticate",
+            "pokemon_names": [
+              "Raticate"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Raticate"
+          },
+          {
+            "pokemon_text": "Fearow (Day/Morning)",
+            "pokemon_names": [
+              "Fearow"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Fearow (Day/Morning)"
+          }
+        ]
+      },
+      {
+        "location": "Route 18",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Raticate",
+            "pokemon_names": [
+              "Raticate"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Raticate"
+          },
+          {
+            "pokemon_text": "Doduo (Day/Morning)",
+            "pokemon_names": [
+              "Doduo"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Doduo (Day/Morning)"
+          },
+          {
+            "pokemon_text": "Grimer (Night)",
+            "pokemon_names": [
+              "Grimer"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Grimer (Night)"
+          }
+        ]
+      },
+      {
+        "location": "Route 19",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Tentacool",
+            "pokemon_names": [
+              "Tentacool"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Tentacool"
+          }
+        ]
+      },
+      {
+        "location": "Route 20",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Tentacool",
+            "pokemon_names": [
+              "Tentacool"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Tentacool"
+          },
+          {
+            "pokemon_text": "Tentacruel",
+            "pokemon_names": [
+              "Tentacruel"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Tentacruel"
+          }
+        ]
+      },
+      {
+        "location": "Route 21",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Tangela",
+            "pokemon_names": [
+              "Tangela"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Tangela"
+          }
+        ]
+      },
+      {
+        "location": "Route 22",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Poliwhirl",
+            "pokemon_names": [
+              "Poliwhirl"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SPEED"
+            ],
+            "notes": "Poliwhirl 10SPEED"
+          }
+        ]
+      },
+      {
+        "location": "Route 23",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Arbok",
+            "pokemon_names": [
+              "Arbok"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10ATK"
+            ],
+            "notes": "Arbok 10ATK"
+          },
+          {
+            "pokemon_text": "Primeape",
+            "pokemon_names": [
+              "Primeape"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10ATK"
+            ],
+            "notes": "Primeape 10ATK"
+          },
+          {
+            "pokemon_text": "Psyduck",
+            "pokemon_names": [
+              "Psyduck"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Psyduck"
+          },
+          {
+            "pokemon_text": "Slowpoke",
+            "pokemon_names": [
+              "Slowpoke"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Slowpoke"
+          }
+        ]
+      },
+      {
+        "location": "Route 24",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Pidgey",
+            "pokemon_names": [
+              "Pidgey"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Pidgey"
+          },
+          {
+            "pokemon_text": "Venonat (Night)",
+            "pokemon_names": [
+              "Venonat"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Venonat (Night)"
+          },
+          {
+            "pokemon_text": "Goldeen",
+            "pokemon_names": [
+              "Goldeen"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Goldeen x5"
+          }
+        ]
+      },
+      {
+        "location": "Route 25",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Bellsprout",
+            "pokemon_names": [
+              "Bellsprout"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Bellsprout"
+          },
+          {
+            "pokemon_text": "Oddish (Night)",
+            "pokemon_names": [
+              "Oddish"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Oddish (Night)"
+          },
+          {
+            "pokemon_text": "Seaking",
+            "pokemon_names": [
+              "Seaking"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10ATK"
+            ],
+            "notes": "Seaking x5 10ATK"
+          }
+        ]
+      },
+      {
+        "location": "Berry Forest",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Hypno",
+            "pokemon_names": [
+              "Hypno"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SDEF"
+            ],
+            "notes": "Hypno 10SDEF"
+          },
+          {
+            "pokemon_text": "Golduck",
+            "pokemon_names": [
+              "Golduck"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Golduck"
+          },
+          {
+            "pokemon_text": "Slowbro",
+            "pokemon_names": [
+              "Slowbro"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Slowbro"
+          }
+        ]
+      },
+      {
+        "location": "Bond Bridge",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Gloom",
+            "pokemon_names": [
+              "Gloom"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SATK"
+            ],
+            "notes": "Gloom 10SATK"
+          }
+        ]
+      },
+      {
+        "location": "Canyon Entrance",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Fearow",
+            "pokemon_names": [
+              "Fearow"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Fearow"
+          },
+          {
+            "pokemon_text": "Phanpy",
+            "pokemon_names": [
+              "Phanpy"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Phanpy"
+          },
+          {
+            "pokemon_text": "Persian (Night)",
+            "pokemon_names": [
+              "Persian"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Persian (Night)"
+          }
+        ]
+      },
+      {
+        "location": "Cape Brink",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Slowbro",
+            "pokemon_names": [
+              "Slowbro"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10DEF"
+            ],
+            "notes": "Slowbro 10DEF"
+          },
+          {
+            "pokemon_text": "Golduck",
+            "pokemon_names": [
+              "Golduck"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SATK"
+            ],
+            "notes": "Golduck 10SATK"
+          }
+        ]
+      },
+      {
+        "location": "Celadon City",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Grimer",
+            "pokemon_names": [
+              "Grimer"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Grimer"
+          }
+        ]
+      },
+      {
+        "location": "Cerulean Cave",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Wobbuffet F1",
+            "pokemon_names": [
+              "Wobbuffet"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10HP"
+            ],
+            "notes": "Wobbuffet F1 10HP"
+          },
+          {
+            "pokemon_text": "Lickitung F1",
+            "pokemon_names": [
+              "Lickitung"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10HP"
+            ],
+            "notes": "Lickitung F1 10HP"
+          },
+          {
+            "pokemon_text": "Golduck F1",
+            "pokemon_names": [
+              "Golduck"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SATK"
+            ],
+            "notes": "Golduck F1 10SATK"
+          },
+          {
+            "pokemon_text": "Parasect F2",
+            "pokemon_names": [
+              "Parasect"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10ATK"
+            ],
+            "notes": "Parasect F2 10ATK"
+          },
+          {
+            "pokemon_text": "Kadabra B1",
+            "pokemon_names": [
+              "Kadabra"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SATK"
+            ],
+            "notes": "Kadabra B1 10SATK"
+          },
+          {
+            "pokemon_text": "Slowbro B1",
+            "pokemon_names": [
+              "Slowbro"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10DEF"
+            ],
+            "notes": "Slowbro B1 10DEF"
+          }
+        ]
+      },
+      {
+        "location": "Cerulean City",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Goldeen",
+            "pokemon_names": [
+              "Goldeen"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Goldeen"
+          }
+        ]
+      },
+      {
+        "location": "Diglett's Cave",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Diglett",
+            "pokemon_names": [
+              "Diglett"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Diglett"
+          }
+        ]
+      },
+      {
+        "location": "Five Island",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Hoppip",
+            "pokemon_names": [
+              "Hoppip"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Hoppip"
+          }
+        ]
+      },
+      {
+        "location": "Five Isle Meadow",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Pidgeotto",
+            "pokemon_names": [
+              "Pidgeotto"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SPEED"
+            ],
+            "notes": "Pidgeotto 10SPEED"
+          },
+          {
+            "pokemon_text": "Hoppip (Day/Morning)",
+            "pokemon_names": [
+              "Hoppip"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Hoppip (Day/Morning)"
+          }
+        ]
+      },
+      {
+        "location": "Four Island",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Wooper",
+            "pokemon_names": [
+              "Wooper"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Wooper"
+          }
+        ]
+      },
+      {
+        "location": "Fuchsia City",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Psyduck",
+            "pokemon_names": [
+              "Psyduck"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Psyduck"
+          },
+          {
+            "pokemon_text": "Slowpoke",
+            "pokemon_names": [
+              "Slowpoke"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Slowpoke"
+          }
+        ]
+      },
+      {
+        "location": "Icefall Cave",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Dewgong R1",
+            "pokemon_names": [
+              "Dewgong"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SDEF"
+            ],
+            "notes": "Dewgong R1 10SDEF"
+          },
+          {
+            "pokemon_text": "Seel R1 Back Cave",
+            "pokemon_names": [
+              "Seel Back Cave"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Seel R1 Back Cave"
+          },
+          {
+            "pokemon_text": "Golbat R2",
+            "pokemon_names": [
+              "Golbat"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SPEED"
+            ],
+            "notes": "Golbat R2 10SPEED"
+          },
+          {
+            "pokemon_text": "Piloswine B1",
+            "pokemon_names": [
+              "Piloswine"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "5HP",
+              "5ATK"
+            ],
+            "notes": "Piloswine B1 5HP 5ATK"
+          }
+        ]
+      },
+      {
+        "location": "Kindle Road",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Meowth",
+            "pokemon_names": [
+              "Meowth"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Meowth"
+          },
+          {
+            "pokemon_text": "Ponyta",
+            "pokemon_names": [
+              "Ponyta"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Ponyta"
+          }
+        ]
+      },
+      {
+        "location": "Lost Cave",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Haunter B1",
+            "pokemon_names": [
+              "Haunter"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Haunter B1"
+          },
+          {
+            "pokemon_text": "Golbat B1",
+            "pokemon_names": [
+              "Golbat"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Golbat B1"
+          },
+          {
+            "pokemon_text": "Murkrow B1 (Right > Down)(Night)",
+            "pokemon_names": [
+              "Murkrow"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Murkrow B1 (Right > Down)(Night)"
+          },
+          {
+            "pokemon_text": "Misdreavus B1 (Right > Down)(Night) *SKILL SWAP",
+            "pokemon_names": [
+              "Misdreavus SKILL SWAP"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Misdreavus B1 (Right > Down)(Night) *SKILL SWAP"
+          }
+        ]
+      },
+      {
+        "location": "Memorial Pillar",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Skiploom",
+            "pokemon_names": [
+              "Skiploom"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SPEED"
+            ],
+            "notes": "Skiploom 10SPEED"
+          },
+          {
+            "pokemon_text": "Hoppip",
+            "pokemon_names": [
+              "Hoppip"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Hoppip"
+          }
+        ]
+      },
+      {
+        "location": "Mt. Ember",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Rapidash Outside",
+            "pokemon_names": [
+              "Rapidash Outside"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SPEED"
+            ],
+            "notes": "Rapidash Outside 10SPEED"
+          },
+          {
+            "pokemon_text": "Machop F1",
+            "pokemon_names": [
+              "Machop"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Machop F1"
+          },
+          {
+            "pokemon_text": "Machoke F2 B1",
+            "pokemon_names": [
+              "Machoke"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10ATK"
+            ],
+            "notes": "Machoke F2 B1 10ATK"
+          },
+          {
+            "pokemon_text": "Geodude F3 B2",
+            "pokemon_names": [
+              "Geodude"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Geodude F3 B2"
+          },
+          {
+            "pokemon_text": "Slugma B3",
+            "pokemon_names": [
+              "Slugma"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Slugma B3"
+          },
+          {
+            "pokemon_text": "Magcargo B4",
+            "pokemon_names": [
+              "Magcargo"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10DEF"
+            ],
+            "notes": "Magcargo B4 10DEF"
+          }
+        ]
+      },
+      {
+        "location": "Mt. Moon",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Zubat F1",
+            "pokemon_names": [
+              "Zubat"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Zubat F1"
+          },
+          {
+            "pokemon_text": "Geodude F1 B2",
+            "pokemon_names": [
+              "Geodude"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Geodude F1 B2"
+          },
+          {
+            "pokemon_text": "Paras B1",
+            "pokemon_names": [
+              "Paras"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Paras B1"
+          }
+        ]
+      },
+      {
+        "location": "Pattern Bush",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Kakuna",
+            "pokemon_names": [
+              "Kakuna"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10DEF"
+            ],
+            "notes": "Kakuna 10DEF"
+          },
+          {
+            "pokemon_text": "Metapod",
+            "pokemon_names": [
+              "Metapod"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10DEF"
+            ],
+            "notes": "Metapod 10DEF"
+          }
+        ]
+      },
+      {
+        "location": "Pokémon Mansion",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Koffing F1",
+            "pokemon_names": [
+              "Koffing"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Koffing F1"
+          },
+          {
+            "pokemon_text": "Grimer F1",
+            "pokemon_names": [
+              "Grimer"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Grimer F1"
+          },
+          {
+            "pokemon_text": "Rattata F2",
+            "pokemon_names": [
+              "Rattata"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Rattata F2"
+          },
+          {
+            "pokemon_text": "Ponyta F2 F3",
+            "pokemon_names": [
+              "Ponyta"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Ponyta F2 F3"
+          },
+          {
+            "pokemon_text": "Vulpix F3 (Night/Morning)",
+            "pokemon_names": [
+              "Vulpix"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Vulpix F3 (Night/Morning)"
+          },
+          {
+            "pokemon_text": "Growlithe F3 (Day/Morning)",
+            "pokemon_names": [
+              "Growlithe"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Growlithe F3 (Day/Morning)"
+          },
+          {
+            "pokemon_text": "Raticate B1",
+            "pokemon_names": [
+              "Raticate"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Raticate B1"
+          },
+          {
+            "pokemon_text": "Ditto B1",
+            "pokemon_names": [
+              "Ditto"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Ditto B1"
+          }
+        ]
+      },
+      {
+        "location": "Pokémon Tower",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Gastly",
+            "pokemon_names": [
+              "Gastly"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Gastly"
+          },
+          {
+            "pokemon_text": "Zubat",
+            "pokemon_names": [
+              "Zubat"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Zubat"
+          },
+          {
+            "pokemon_text": "Golbat",
+            "pokemon_names": [
+              "Golbat"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Golbat"
+          },
+          {
+            "pokemon_text": "Haunter",
+            "pokemon_names": [
+              "Haunter"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Haunter"
+          },
+          {
+            "pokemon_text": "Cubone",
+            "pokemon_names": [
+              "Cubone"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Cubone"
+          }
+        ]
+      },
+      {
+        "location": "Power Plant",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Pikachu",
+            "pokemon_names": [
+              "Pikachu"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SPEED"
+            ],
+            "notes": "Pikachu 10SPEED"
+          }
+        ]
+      },
+      {
+        "location": "Resort Gorgeous",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Hoppip",
+            "pokemon_names": [
+              "Hoppip"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Hoppip"
+          }
+        ]
+      },
+      {
+        "location": "Rock Tunnel",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Zubat",
+            "pokemon_names": [
+              "Zubat"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Zubat"
+          },
+          {
+            "pokemon_text": "Geodude",
+            "pokemon_names": [
+              "Geodude"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Geodude"
+          },
+          {
+            "pokemon_text": "Onix",
+            "pokemon_names": [
+              "Onix"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Onix"
+          }
+        ]
+      },
+      {
+        "location": "Ruin Valley",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Fearow",
+            "pokemon_names": [
+              "Fearow"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SPEED"
+            ],
+            "notes": "Fearow 10SPEED"
+          },
+          {
+            "pokemon_text": "Marill",
+            "pokemon_names": [
+              "Marill"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10HP"
+            ],
+            "notes": "Marill 10HP"
+          }
+        ]
+      },
+      {
+        "location": "Seafoam Islands",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Psyduck F1",
+            "pokemon_names": [
+              "Psyduck"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Psyduck F1"
+          },
+          {
+            "pokemon_text": "Slowpoke F1 B1",
+            "pokemon_names": [
+              "Slowpoke"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Slowpoke F1 B1"
+          },
+          {
+            "pokemon_text": "Seel B1 B2 B3",
+            "pokemon_names": [
+              "Seel"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Seel B1 B2 B3"
+          },
+          {
+            "pokemon_text": "Krabby B3",
+            "pokemon_names": [
+              "Krabby"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Krabby B3"
+          },
+          {
+            "pokemon_text": "Kingler B4",
+            "pokemon_names": [
+              "Kingler"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10ATK"
+            ],
+            "notes": "Kingler B4 10ATK"
+          }
+        ]
+      },
+      {
+        "location": "Sevault Canyon",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Marowak",
+            "pokemon_names": [
+              "Marowak"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10DEF"
+            ],
+            "notes": "Marowak 10DEF"
+          }
+        ]
+      },
+      {
+        "location": "Three Isle Port",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Dunsparce",
+            "pokemon_names": [
+              "Dunsparce"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Dunsparce"
+          }
+        ]
+      },
+      {
+        "location": "Treasure Beach",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Persian",
+            "pokemon_names": [
+              "Persian"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Persian"
+          },
+          {
+            "pokemon_text": "Tangela",
+            "pokemon_names": [
+              "Tangela"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Tangela"
+          }
+        ]
+      },
+      {
+        "location": "Victory Road",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Machoke F1",
+            "pokemon_names": [
+              "Machoke"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10ATK"
+            ],
+            "notes": "Machoke F1 10ATK"
+          },
+          {
+            "pokemon_text": "Rhydon F1",
+            "pokemon_names": [
+              "Rhydon"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10ATK"
+            ],
+            "notes": "Rhydon F1 10ATK"
+          },
+          {
+            "pokemon_text": "Marowak F2",
+            "pokemon_names": [
+              "Marowak"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10DEF"
+            ],
+            "notes": "Marowak F2 10DEF"
+          },
+          {
+            "pokemon_text": "Sandslash F2",
+            "pokemon_names": [
+              "Sandslash"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10DEF"
+            ],
+            "notes": "Sandslash F2 10DEF"
+          },
+          {
+            "pokemon_text": "Onix F3",
+            "pokemon_names": [
+              "Onix"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Onix F3"
+          },
+          {
+            "pokemon_text": "Donphan F3",
+            "pokemon_names": [
+              "Donphan"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Donphan F3"
+          },
+          {
+            "pokemon_text": "Ursaring F3 (Winter)",
+            "pokemon_names": [
+              "Ursaring"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Ursaring F3 (Winter)"
+          }
+        ]
+      },
+      {
+        "location": "Viridian City",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Poliwag",
+            "pokemon_names": [
+              "Poliwag"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Poliwag"
+          }
+        ]
+      },
+      {
+        "location": "Water Labyrinth",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Hoppip",
+            "pokemon_names": [
+              "Hoppip"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Hoppip"
+          }
+        ]
+      },
+      {
+        "location": "Water Path",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Persian",
+            "pokemon_names": [
+              "Persian"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SPEED"
+            ],
+            "notes": "Persian 10SPEED"
+          }
+        ]
+      }
+    ],
+    "Hoenn": [
+      {
+        "location": "Route 102",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Marill",
+            "pokemon_names": [
+              "Marill"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10HP"
+            ],
+            "notes": "Marill 10HP"
+          }
+        ]
+      },
+      {
+        "location": "Route 110",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Electrike",
+            "pokemon_names": [
+              "Electrike"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Electrike"
+          }
+        ]
+      },
+      {
+        "location": "Route 111",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Trapinch",
+            "pokemon_names": [
+              "Trapinch"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Trapinch"
+          },
+          {
+            "pokemon_text": "Cacnea (Night)",
+            "pokemon_names": [
+              "Cacnea"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Cacnea (Night)"
+          },
+          {
+            "pokemon_text": "Sandshrew (Day/Morning)",
+            "pokemon_names": [
+              "Sandshrew"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Sandshrew (Day/Morning)"
+          },
+          {
+            "pokemon_text": "Marill",
+            "pokemon_names": [
+              "Marill"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Marill"
+          },
+          {
+            "pokemon_text": "Surskit",
+            "pokemon_names": [
+              "Surskit"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Surskit"
+          }
+        ]
+      },
+      {
+        "location": "Route 112",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Numel",
+            "pokemon_names": [
+              "Numel"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Numel"
+          }
+        ]
+      },
+      {
+        "location": "Route 113",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Spinda",
+            "pokemon_names": [
+              "Spinda"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Spinda"
+          }
+        ]
+      },
+      {
+        "location": "Route 114",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Seedot (Day/Morning)",
+            "pokemon_names": [
+              "Seedot"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Seedot (Day/Morning)"
+          },
+          {
+            "pokemon_text": "Zangoose (Day/Morning)",
+            "pokemon_names": [
+              "Zangoose"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Zangoose (Day/Morning)"
+          },
+          {
+            "pokemon_text": "Lotad (Night/Morning)",
+            "pokemon_names": [
+              "Lotad"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Lotad (Night/Morning)"
+          },
+          {
+            "pokemon_text": "Seviper (Night/Morning)",
+            "pokemon_names": [
+              "Seviper"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Seviper (Night/Morning)"
+          },
+          {
+            "pokemon_text": "Marill",
+            "pokemon_names": [
+              "Marill"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10HP"
+            ],
+            "notes": "Marill x5 10HP"
+          }
+        ]
+      },
+      {
+        "location": "Route 115",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Swellow (Winter)",
+            "pokemon_names": [
+              "Swellow"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SPEED"
+            ],
+            "notes": "Swellow (Winter) 10SPEED"
+          },
+          {
+            "pokemon_text": "Jigglypuff (Winter)",
+            "pokemon_names": [
+              "Jigglypuff"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Jigglypuff (Winter)"
+          },
+          {
+            "pokemon_text": "Swablu (Winter)",
+            "pokemon_names": [
+              "Swablu"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Swablu (Winter)"
+          }
+        ]
+      },
+      {
+        "location": "Route 117",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Roselia",
+            "pokemon_names": [
+              "Roselia"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Roselia"
+          },
+          {
+            "pokemon_text": "Oddish (Night)",
+            "pokemon_names": [
+              "Oddish"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Oddish (Night)"
+          },
+          {
+            "pokemon_text": "Volbeat (Night)",
+            "pokemon_names": [
+              "Volbeat"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Volbeat (Night)"
+          },
+          {
+            "pokemon_text": "Illumise (Night)",
+            "pokemon_names": [
+              "Illumise"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Illumise (Night)"
+          },
+          {
+            "pokemon_text": "Lombre",
+            "pokemon_names": [
+              "Lombre"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Lombre x5"
+          }
+        ]
+      },
+      {
+        "location": "Route 118",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Linoone",
+            "pokemon_names": [
+              "Linoone"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Linoone"
+          },
+          {
+            "pokemon_text": "Electrike",
+            "pokemon_names": [
+              "Electrike"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Electrike"
+          }
+        ]
+      },
+      {
+        "location": "Route 119",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Gloom",
+            "pokemon_names": [
+              "Gloom"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SATK"
+            ],
+            "notes": "Gloom 10SATK"
+          }
+        ]
+      },
+      {
+        "location": "Route 120",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Mightyena",
+            "pokemon_names": [
+              "Mightyena"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10ATK"
+            ],
+            "notes": "Mightyena 10ATK"
+          },
+          {
+            "pokemon_text": "Marill",
+            "pokemon_names": [
+              "Marill"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10HP"
+            ],
+            "notes": "Marill 10HP"
+          }
+        ]
+      },
+      {
+        "location": "Route 121",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Linoone",
+            "pokemon_names": [
+              "Linoone"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SPEED"
+            ],
+            "notes": "Linoone 10SPEED"
+          }
+        ]
+      },
+      {
+        "location": "Route 123",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Linoone",
+            "pokemon_names": [
+              "Linoone"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Linoone"
+          },
+          {
+            "pokemon_text": "Mightyena",
+            "pokemon_names": [
+              "Mightyena"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Mightyena"
+          },
+          {
+            "pokemon_text": "Surskit",
+            "pokemon_names": [
+              "Surskit"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Surskit"
+          }
+        ]
+      },
+      {
+        "location": "Artisan Cave",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Smeargle",
+            "pokemon_names": [
+              "Smeargle"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Smeargle"
+          }
+        ]
+      },
+      {
+        "location": "Cave of Origin",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Golbat",
+            "pokemon_names": [
+              "Golbat"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SPEED"
+            ],
+            "notes": "Golbat 10SPEED"
+          }
+        ]
+      },
+      {
+        "location": "Desert Underpass",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Loudred",
+            "pokemon_names": [
+              "Loudred"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10HP"
+            ],
+            "notes": "Loudred 10HP"
+          }
+        ]
+      },
+      {
+        "location": "Fiery Path",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Numel",
+            "pokemon_names": [
+              "Numel"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Numel"
+          },
+          {
+            "pokemon_text": "Torkoal",
+            "pokemon_names": [
+              "Torkoal"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Torkoal"
+          }
+        ]
+      },
+      {
+        "location": "Granite Cave",
+        "default_horde_size": 3,
+        "notes": "(Flash)",
+        "encounters": [
+          {
+            "pokemon_text": "Makuhita F1",
+            "pokemon_names": [
+              "Makuhita"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Makuhita F1"
+          },
+          {
+            "pokemon_text": "Aron B1",
+            "pokemon_names": [
+              "Aron"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Aron B1"
+          },
+          {
+            "pokemon_text": "Zubat B2",
+            "pokemon_names": [
+              "Zubat"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Zubat B2"
+          },
+          {
+            "pokemon_text": "Mawile B2 (Day/Morning)",
+            "pokemon_names": [
+              "Mawile"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Mawile B2 (Day/Morning)"
+          },
+          {
+            "pokemon_text": "Sableye B2 (Night/Morning)",
+            "pokemon_names": [
+              "Sableye"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Sableye B2 (Night/Morning)"
+          }
+        ]
+      },
+      {
+        "location": "Jagged Pass",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Machop",
+            "pokemon_names": [
+              "Machop"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Machop"
+          },
+          {
+            "pokemon_text": "Spoink",
+            "pokemon_names": [
+              "Spoink"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Spoink"
+          }
+        ]
+      },
+      {
+        "location": "Magma Hideout",
+        "default_horde_size": 5,
+        "notes": "(Rock Smash & Strenght)",
+        "encounters": [
+          {
+            "pokemon_text": "Torkoal R1",
+            "pokemon_names": [
+              "Torkoal"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10DEF"
+            ],
+            "notes": "Torkoal R1 10DEF"
+          },
+          {
+            "pokemon_text": "Geodude R2 DAMP",
+            "pokemon_names": [
+              "Geodude"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Geodude R2 DAMP"
+          },
+          {
+            "pokemon_text": "Graveler R3 DAMP",
+            "pokemon_names": [
+              "Graveler"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Graveler R3 DAMP"
+          }
+        ]
+      },
+      {
+        "location": "Meteor Falls",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Lunatone R2 F1 (Waterfall)",
+            "pokemon_names": [
+              "Lunatone"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Lunatone R2 F1 (Waterfall)"
+          },
+          {
+            "pokemon_text": "Solrock R2 B1 (Waterfall)",
+            "pokemon_names": [
+              "Solrock"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Solrock R2 B1 (Waterfall)"
+          },
+          {
+            "pokemon_text": "Solrock F1 (Day Morning)",
+            "pokemon_names": [
+              "Solrock"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Solrock F1 (Day Morning)"
+          },
+          {
+            "pokemon_text": "Lunatone F1(Night)",
+            "pokemon_names": [
+              "Lunatone"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Lunatone F1(Night)"
+          },
+          {
+            "pokemon_text": "Mirage Tower ???",
+            "pokemon_names": [
+              "Mirage Tower"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Mirage Tower ???"
+          },
+          {
+            "pokemon_text": "Sandshrew",
+            "pokemon_names": [
+              "Sandshrew"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Sandshrew"
+          },
+          {
+            "pokemon_text": "Trapinch",
+            "pokemon_names": [
+              "Trapinch"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Trapinch"
+          },
+          {
+            "pokemon_text": "Cacnea (Night)",
+            "pokemon_names": [
+              "Cacnea"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Cacnea (Night)"
+          }
+        ]
+      },
+      {
+        "location": "Mt. Pyre",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Shuppet F1",
+            "pokemon_names": [
+              "Shuppet"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Shuppet F1"
+          },
+          {
+            "pokemon_text": "Duskull F6",
+            "pokemon_names": [
+              "Duskull"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Duskull F6"
+          },
+          {
+            "pokemon_text": "Vulpix",
+            "pokemon_names": [
+              "Vulpix"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Vulpix"
+          },
+          {
+            "pokemon_text": "Meditite (Day/Morning)",
+            "pokemon_names": [
+              "Meditite"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Meditite (Day/Morning)"
+          }
+        ]
+      },
+      {
+        "location": "New Mauville",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Magnemite R1",
+            "pokemon_names": [
+              "Magnemite"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Magnemite R1"
+          },
+          {
+            "pokemon_text": "Voltorb R2",
+            "pokemon_names": [
+              "Voltorb"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Voltorb R2"
+          }
+        ]
+      },
+      {
+        "location": "Petalburg City",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Marill",
+            "pokemon_names": [
+              "Marill"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Marill"
+          },
+          {
+            "pokemon_text": "Surskit",
+            "pokemon_names": [
+              "Surskit"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Surskit"
+          }
+        ]
+      },
+      {
+        "location": "Rusturf Tunnel",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Whismur",
+            "pokemon_names": [
+              "Whismur"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Whismur"
+          }
+        ]
+      },
+      {
+        "location": "Scorched Slab",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Zubat",
+            "pokemon_names": [
+              "Zubat"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Zubat"
+          },
+          {
+            "pokemon_text": "Golbat",
+            "pokemon_names": [
+              "Golbat"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Golbat"
+          }
+        ]
+      },
+      {
+        "location": "Seafloor Cavern",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Golbat",
+            "pokemon_names": [
+              "Golbat"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SPEED"
+            ],
+            "notes": "Golbat 10SPEED"
+          }
+        ]
+      },
+      {
+        "location": "Shoal Cave",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Sealeo B1 Ice room",
+            "pokemon_names": [
+              "Sealeo Ice room"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10HP"
+            ],
+            "notes": "Sealeo B1 Ice room 10HP"
+          },
+          {
+            "pokemon_text": "Golbat",
+            "pokemon_names": [
+              "Golbat"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SPEED"
+            ],
+            "notes": "Golbat 10SPEED"
+          },
+          {
+            "pokemon_text": "Snorunt Ice room",
+            "pokemon_names": [
+              "Snorunt Ice room"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Snorunt Ice room"
+          }
+        ]
+      },
+      {
+        "location": "Sky Pillar",
+        "default_horde_size": 5,
+        "notes": "(Mach-Bike)",
+        "encounters": [
+          {
+            "pokemon_text": "Ariados F1 (Night)",
+            "pokemon_names": [
+              "Ariados"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10ATK"
+            ],
+            "notes": "Ariados F1 (Night) 10ATK"
+          },
+          {
+            "pokemon_text": "Banette F1",
+            "pokemon_names": [
+              "Banette"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10ATK"
+            ],
+            "notes": "Banette F1 10ATK"
+          },
+          {
+            "pokemon_text": "Golbat F3",
+            "pokemon_names": [
+              "Golbat"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Golbat F3"
+          },
+          {
+            "pokemon_text": "Claydol F3 F5",
+            "pokemon_names": [
+              "Claydol"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SDEF"
+            ],
+            "notes": "Claydol F3 F5 10SDEF"
+          },
+          {
+            "pokemon_text": "Altaria F5",
+            "pokemon_names": [
+              "Altaria"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SDEF"
+            ],
+            "notes": "Altaria F5 10SDEF"
+          }
+        ]
+      },
+      {
+        "location": "Sootopolis City",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Magikarp",
+            "pokemon_names": [
+              "Magikarp"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Magikarp"
+          }
+        ]
+      },
+      {
+        "location": "Underwater",
+        "default_horde_size": 5,
+        "notes": "(Dive)",
+        "encounters": [
+          {
+            "pokemon_text": "Clamperl Route 124",
+            "pokemon_names": [
+              "Clamperl Route 124"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Clamperl Route 124"
+          },
+          {
+            "pokemon_text": "Lanturn Route 126",
+            "pokemon_names": [
+              "Lanturn Route 126"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10HP"
+            ],
+            "notes": "Lanturn Route 126 10HP"
+          },
+          {
+            "pokemon_text": "Corsola???",
+            "pokemon_names": [
+              "Corsola"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Corsola???"
+          },
+          {
+            "pokemon_text": "Chinchou???",
+            "pokemon_names": [
+              "Chinchou"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Chinchou???"
+          }
+        ]
+      },
+      {
+        "location": "Victory Road",
+        "default_horde_size": 5,
+        "notes": "(Strength, Rock Smash, Flash & Waterfall)",
+        "encounters": [
+          {
+            "pokemon_text": "Hariyama F1",
+            "pokemon_names": [
+              "Hariyama"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10HP"
+            ],
+            "notes": "Hariyama F1 10HP"
+          },
+          {
+            "pokemon_text": "Lairon B1",
+            "pokemon_names": [
+              "Lairon"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10DEF"
+            ],
+            "notes": "Lairon B1 10DEF"
+          },
+          {
+            "pokemon_text": "Golbat B2",
+            "pokemon_names": [
+              "Golbat"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SPEED"
+            ],
+            "notes": "Golbat B2 10SPEED"
+          },
+          {
+            "pokemon_text": "Medicham B2",
+            "pokemon_names": [
+              "Medicham"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SPEED"
+            ],
+            "notes": "Medicham B2 10SPEED"
+          },
+          {
+            "pokemon_text": "Golbat",
+            "pokemon_names": [
+              "Golbat"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SPEED"
+            ],
+            "notes": "Golbat 10SPEED"
+          }
+        ]
+      }
+    ],
+    "Unova": [
+      {
+        "location": "Route 1",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Watchog",
+            "pokemon_names": [
+              "Watchog"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10ATK"
+            ],
+            "notes": "Watchog 10ATK"
+          }
+        ]
+      },
+      {
+        "location": "Route 3",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Pidove",
+            "pokemon_names": [
+              "Pidove"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Pidove"
+          },
+          {
+            "pokemon_text": "Blitzel",
+            "pokemon_names": [
+              "Blitzel"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Blitzel"
+          },
+          {
+            "pokemon_text": "Purrloin (Night)",
+            "pokemon_names": [
+              "Purrloin"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Purrloin (Night)"
+          }
+        ]
+      },
+      {
+        "location": "Route 4",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Darumaka",
+            "pokemon_names": [
+              "Darumaka"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Darumaka"
+          },
+          {
+            "pokemon_text": "Frillish",
+            "pokemon_names": [
+              "Frillish"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Frillish x5"
+          }
+        ]
+      },
+      {
+        "location": "Route 5",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Minccino",
+            "pokemon_names": [
+              "Minccino"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Minccino"
+          },
+          {
+            "pokemon_text": "Liepard",
+            "pokemon_names": [
+              "Liepard"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Liepard"
+          }
+        ]
+      },
+      {
+        "location": "Route 6",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Karrablast",
+            "pokemon_names": [
+              "Karrablast"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Karrablast"
+          },
+          {
+            "pokemon_text": "Deerling",
+            "pokemon_names": [
+              "Deerling"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Deerling"
+          },
+          {
+            "pokemon_text": "Tranquill",
+            "pokemon_names": [
+              "Tranquill"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10ATK"
+            ],
+            "notes": "Tranquill x5 10ATK"
+          }
+        ]
+      },
+      {
+        "location": "Route 7",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Watchog",
+            "pokemon_names": [
+              "Watchog"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10ATK"
+            ],
+            "notes": "Watchog 10ATK"
+          },
+          {
+            "pokemon_text": "Zebstrika ???",
+            "pokemon_names": [
+              "Zebstrika"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Zebstrika ???"
+          }
+        ]
+      },
+      {
+        "location": "Route 8",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Palpitoad",
+            "pokemon_names": [
+              "Palpitoad"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10HP"
+            ],
+            "notes": "Palpitoad 10HP"
+          },
+          {
+            "pokemon_text": "Stunfisk",
+            "pokemon_names": [
+              "Stunfisk"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10HP"
+            ],
+            "notes": "Stunfisk 10HP"
+          }
+        ]
+      },
+      {
+        "location": "Route 9",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Duosion",
+            "pokemon_names": [
+              "Duosion"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SATK"
+            ],
+            "notes": "Duosion 10SATK"
+          },
+          {
+            "pokemon_text": "Gothorita",
+            "pokemon_names": [
+              "Gothorita"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SDEF"
+            ],
+            "notes": "Gothorita 10SDEF"
+          }
+        ]
+      },
+      {
+        "location": "Route 10",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Bouffalant",
+            "pokemon_names": [
+              "Bouffalant"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10ATK"
+            ],
+            "notes": "Bouffalant 10ATK"
+          },
+          {
+            "pokemon_text": "Amoonguss",
+            "pokemon_names": [
+              "Amoonguss"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10HP"
+            ],
+            "notes": "Amoonguss 10HP"
+          },
+          {
+            "pokemon_text": "Herdier @Badge-check-gates",
+            "pokemon_names": [
+              "Herdier Badge-check-gates"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10ATK"
+            ],
+            "notes": "Herdier @Badge-check-gates 10ATK"
+          }
+        ]
+      },
+      {
+        "location": "Route 11",
+        "default_horde_size": 5,
+        "notes": "(Waterfall)",
+        "encounters": [
+          {
+            "pokemon_text": "Golduck",
+            "pokemon_names": [
+              "Golduck"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SATK"
+            ],
+            "notes": "Golduck 10SATK"
+          },
+          {
+            "pokemon_text": "Gligar",
+            "pokemon_names": [
+              "Gligar"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Gligar"
+          },
+          {
+            "pokemon_text": "Amoonguss",
+            "pokemon_names": [
+              "Amoonguss"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Amoonguss"
+          },
+          {
+            "pokemon_text": "Buizel",
+            "pokemon_names": [
+              "Buizel"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Buizel"
+          }
+        ]
+      },
+      {
+        "location": "Route 12",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Rapidash",
+            "pokemon_names": [
+              "Rapidash"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SPEED"
+            ],
+            "notes": "Rapidash 10SPEED"
+          },
+          {
+            "pokemon_text": "Tranquill",
+            "pokemon_names": [
+              "Tranquill"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10ATK"
+            ],
+            "notes": "Tranquill 10ATK"
+          }
+        ]
+      },
+      {
+        "location": "Route 13",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Swellow (Day/Morning)",
+            "pokemon_names": [
+              "Swellow"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Swellow (Day/Morning)"
+          },
+          {
+            "pokemon_text": "Solrock (Day/Morning)",
+            "pokemon_names": [
+              "Solrock"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Solrock (Day/Morning)"
+          },
+          {
+            "pokemon_text": "Lunatone (Night)",
+            "pokemon_names": [
+              "Lunatone"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Lunatone (Night)"
+          },
+          {
+            "pokemon_text": "Drifblim (Night)",
+            "pokemon_names": [
+              "Drifblim"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Drifblim (Night)"
+          }
+        ]
+      },
+      {
+        "location": "Route 14",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Beheeyem",
+            "pokemon_names": [
+              "Beheeyem"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SATK"
+            ],
+            "notes": "Beheeyem 10SATK"
+          },
+          {
+            "pokemon_text": "Jigglypuff",
+            "pokemon_names": [
+              "Jigglypuff"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10HP"
+            ],
+            "notes": "Jigglypuff 10HP"
+          },
+          {
+            "pokemon_text": "Buizel",
+            "pokemon_names": [
+              "Buizel"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Buizel"
+          }
+        ]
+      },
+      {
+        "location": "Route 15",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Sawk",
+            "pokemon_names": [
+              "Sawk"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Sawk"
+          },
+          {
+            "pokemon_text": "Throh",
+            "pokemon_names": [
+              "Throh"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Throh"
+          },
+          {
+            "pokemon_text": "Marowak",
+            "pokemon_names": [
+              "Marowak"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Marowak"
+          },
+          {
+            "pokemon_text": "Fearow",
+            "pokemon_names": [
+              "Fearow"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SPEED"
+            ],
+            "notes": "Fearow 10SPEED"
+          }
+        ]
+      },
+      {
+        "location": "Route 16",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Solosis",
+            "pokemon_names": [
+              "Solosis"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Solosis"
+          },
+          {
+            "pokemon_text": "Gothita",
+            "pokemon_names": [
+              "Gothita"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Gothita"
+          },
+          {
+            "pokemon_text": "Trubbish",
+            "pokemon_names": [
+              "Trubbish"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Trubbish"
+          },
+          {
+            "pokemon_text": "Minccino",
+            "pokemon_names": [
+              "Minccino"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Minccino"
+          }
+        ]
+      },
+      {
+        "location": "Route 17",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Frillish",
+            "pokemon_names": [
+              "Frillish"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Frillish"
+          }
+        ]
+      },
+      {
+        "location": "Route 18",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Throh (Day/Morning)",
+            "pokemon_names": [
+              "Throh"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Throh (Day/Morning)"
+          },
+          {
+            "pokemon_text": "Sawk (Day/Morning)",
+            "pokemon_names": [
+              "Sawk"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Sawk (Day/Morning)"
+          },
+          {
+            "pokemon_text": "Scraggy",
+            "pokemon_names": [
+              "Scraggy"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Scraggy"
+          },
+          {
+            "pokemon_text": "Crustle",
+            "pokemon_names": [
+              "Crustle"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Crustle"
+          },
+          {
+            "pokemon_text": "Frillish",
+            "pokemon_names": [
+              "Frillish"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Frillish"
+          }
+        ]
+      },
+      {
+        "location": "Abundant Shrine",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Bronzong",
+            "pokemon_names": [
+              "Bronzong"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Bronzong"
+          },
+          {
+            "pokemon_text": "Vulpix",
+            "pokemon_names": [
+              "Vulpix"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Vulpix"
+          },
+          {
+            "pokemon_text": "Stantler",
+            "pokemon_names": [
+              "Stantler"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Stantler"
+          },
+          {
+            "pokemon_text": "Slowpoke",
+            "pokemon_names": [
+              "Slowpoke"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Slowpoke"
+          }
+        ]
+      },
+      {
+        "location": "Celestial Tower",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Litwick F1",
+            "pokemon_names": [
+              "Litwick"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Litwick F1"
+          },
+          {
+            "pokemon_text": "Elgyem F2",
+            "pokemon_names": [
+              "Elgyem"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Elgyem F2"
+          }
+        ]
+      },
+      {
+        "location": "Challenger's Cave",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Lickitung F1",
+            "pokemon_names": [
+              "Lickitung"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10HP"
+            ],
+            "notes": "Lickitung F1 10HP"
+          },
+          {
+            "pokemon_text": "Boldore B1",
+            "pokemon_names": [
+              "Boldore"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Boldore B1"
+          },
+          {
+            "pokemon_text": "Graveler B1 B2",
+            "pokemon_names": [
+              "Graveler"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Graveler B1 B2"
+          },
+          {
+            "pokemon_text": "Sableye B2",
+            "pokemon_names": [
+              "Sableye"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Sableye B2"
+          },
+          {
+            "pokemon_text": "Mawile B2",
+            "pokemon_names": [
+              "Mawile"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Mawile B2"
+          }
+        ]
+      },
+      {
+        "location": "Chargestone Cave",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Klink F1",
+            "pokemon_names": [
+              "Klink"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Klink F1"
+          },
+          {
+            "pokemon_text": "Ferroseed B1",
+            "pokemon_names": [
+              "Ferroseed"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Ferroseed B1"
+          },
+          {
+            "pokemon_text": "Joltik B1 B2",
+            "pokemon_names": [
+              "Joltik"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Joltik B1 B2"
+          },
+          {
+            "pokemon_text": "Tynamo B2",
+            "pokemon_names": [
+              "Tynamo"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Tynamo B2"
+          }
+        ]
+      },
+      {
+        "location": "Cold Storage",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Herdier",
+            "pokemon_names": [
+              "Herdier"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Herdier x3"
+          },
+          {
+            "pokemon_text": "Vanillite",
+            "pokemon_names": [
+              "Vanillite"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Vanillite"
+          },
+          {
+            "pokemon_text": "Timburr",
+            "pokemon_names": [
+              "Timburr"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Timburr"
+          }
+        ]
+      },
+      {
+        "location": "Desert Resort",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Sandile Entrance",
+            "pokemon_names": [
+              "Sandile Entrance"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Sandile Entrance"
+          },
+          {
+            "pokemon_text": "Darumaka",
+            "pokemon_names": [
+              "Darumaka"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Darumaka"
+          },
+          {
+            "pokemon_text": "Sigilyph",
+            "pokemon_names": [
+              "Sigilyph"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Sigilyph"
+          },
+          {
+            "pokemon_text": "Maractus (Night)",
+            "pokemon_names": [
+              "Maractus"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Maractus (Night)"
+          }
+        ]
+      },
+      {
+        "location": "Dragonspiral Tower",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Deerling",
+            "pokemon_names": [
+              "Deerling"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Deerling"
+          },
+          {
+            "pokemon_text": "Mienfoo",
+            "pokemon_names": [
+              "Mienfoo"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Mienfoo"
+          },
+          {
+            "pokemon_text": "Sawsbuck (Winter)",
+            "pokemon_names": [
+              "Sawsbuck"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Sawsbuck (Winter)"
+          },
+          {
+            "pokemon_text": "Beartic (Winter)",
+            "pokemon_names": [
+              "Beartic"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Beartic (Winter)"
+          },
+          {
+            "pokemon_text": "Vanillite (Winter)",
+            "pokemon_names": [
+              "Vanillite"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Vanillite (Winter)"
+          },
+          {
+            "pokemon_text": "Druddigon F1",
+            "pokemon_names": [
+              "Druddigon"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10ATK"
+            ],
+            "notes": "Druddigon F1 10ATK"
+          },
+          {
+            "pokemon_text": "Golett F2",
+            "pokemon_names": [
+              "Golett"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Golett F2"
+          },
+          {
+            "pokemon_text": "Dragonspiral Tower (pre area)",
+            "pokemon_names": [
+              "Dragonspiral Tower"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Dragonspiral Tower (pre area)"
+          },
+          {
+            "pokemon_text": "Mienfoo/Vanillite (Winter)",
+            "pokemon_names": [
+              "Mienfoo",
+              "Vanillite"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Mienfoo/Vanillite (Winter)"
+          },
+          {
+            "pokemon_text": "Vanillish (Winter)",
+            "pokemon_names": [
+              "Vanillish"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Vanillish (Winter)"
+          }
+        ]
+      },
+      {
+        "location": "Dreamyard",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Liepard",
+            "pokemon_names": [
+              "Liepard"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Liepard"
+          },
+          {
+            "pokemon_text": "Raticate B1",
+            "pokemon_names": [
+              "Raticate"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Raticate B1"
+          },
+          {
+            "pokemon_text": "Kricketune B1 (Night/Morning)",
+            "pokemon_names": [
+              "Kricketune"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Kricketune B1 (Night/Morning)"
+          }
+        ]
+      },
+      {
+        "location": "Driftveil City",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Frillish",
+            "pokemon_names": [
+              "Frillish"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Frillish"
+          }
+        ]
+      },
+      {
+        "location": "Giant Chasm",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Golbat Entrance",
+            "pokemon_names": [
+              "Golbat Entrance"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SPEED"
+            ],
+            "notes": "Golbat Entrance 10SPEED"
+          },
+          {
+            "pokemon_text": "Tangela Entrance",
+            "pokemon_names": [
+              "Tangela Entrance"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Tangela Entrance"
+          },
+          {
+            "pokemon_text": "Sneasel",
+            "pokemon_names": [
+              "Sneasel"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Sneasel"
+          },
+          {
+            "pokemon_text": "Piloswine",
+            "pokemon_names": [
+              "Piloswine"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Piloswine"
+          },
+          {
+            "pokemon_text": "Seel",
+            "pokemon_names": [
+              "Seel"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Seel"
+          },
+          {
+            "pokemon_text": "Piloswine (North of the cave)",
+            "pokemon_names": [
+              "Piloswine"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "5ATK",
+              "5DEF"
+            ],
+            "notes": "Piloswine (North of the cave) 5ATK 5DEF"
+          },
+          {
+            "pokemon_text": "Solrock (Day/Morning)",
+            "pokemon_names": [
+              "Solrock"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Solrock (Day/Morning)"
+          },
+          {
+            "pokemon_text": "Lunatone (Night/Morning)",
+            "pokemon_names": [
+              "Lunatone"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Lunatone (Night/Morning)"
+          }
+        ]
+      },
+      {
+        "location": "Guidance Chamber",
+        "default_horde_size": 5,
+        "notes": "(Mistralton Cave 2nd floor) Flash",
+        "encounters": [
+          {
+            "pokemon_text": "Woobat",
+            "pokemon_names": [
+              "Woobat"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Woobat"
+          },
+          {
+            "pokemon_text": "Axew",
+            "pokemon_names": [
+              "Axew"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Axew"
+          }
+        ]
+      },
+      {
+        "location": "Icirrus City",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Shelmet (Winter)",
+            "pokemon_names": [
+              "Shelmet"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Shelmet (Winter)"
+          },
+          {
+            "pokemon_text": "Stunfisk",
+            "pokemon_names": [
+              "Stunfisk"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Stunfisk"
+          }
+        ]
+      },
+      {
+        "location": "Lostlorn Forest",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Venipede Night",
+            "pokemon_names": [
+              "Venipede Night"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Venipede Night"
+          },
+          {
+            "pokemon_text": "Cottonee (Day/Morning)",
+            "pokemon_names": [
+              "Cottonee"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Cottonee (Day/Morning)"
+          },
+          {
+            "pokemon_text": "Petilil (Day/Morning)",
+            "pokemon_names": [
+              "Petilil"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Petilil (Day/Morning)"
+          },
+          {
+            "pokemon_text": "Zorua",
+            "pokemon_names": [
+              "Zorua"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Zorua"
+          },
+          {
+            "pokemon_text": "Swadloon (Waterfall)",
+            "pokemon_names": [
+              "Swadloon"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10DEF"
+            ],
+            "notes": "Swadloon x5 (Waterfall) 10DEF"
+          }
+        ]
+      },
+      {
+        "location": "Mistralton Cave",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Boldore",
+            "pokemon_names": [
+              "Boldore"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Boldore"
+          },
+          {
+            "pokemon_text": "Woobat",
+            "pokemon_names": [
+              "Woobat"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Woobat"
+          }
+        ]
+      },
+      {
+        "location": "Moor of Icirrus",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Palpitoad",
+            "pokemon_names": [
+              "Palpitoad"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10HP"
+            ],
+            "notes": "Palpitoad 10HP"
+          },
+          {
+            "pokemon_text": "Stunfisk",
+            "pokemon_names": [
+              "Stunfisk"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10HP"
+            ],
+            "notes": "Stunfisk 10HP"
+          }
+        ]
+      },
+      {
+        "location": "P2 Laboratory",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Herdier",
+            "pokemon_names": [
+              "Herdier"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10ATK"
+            ],
+            "notes": "Herdier 10ATK"
+          },
+          {
+            "pokemon_text": "Frillish",
+            "pokemon_names": [
+              "Frillish"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Frillish"
+          }
+        ]
+      },
+      {
+        "location": "Pinwheel Forest",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Tympole Entrance",
+            "pokemon_names": [
+              "Tympole Entrance"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Tympole Entrance"
+          },
+          {
+            "pokemon_text": "Timburr Entrance",
+            "pokemon_names": [
+              "Timburr Entrance"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Timburr Entrance"
+          },
+          {
+            "pokemon_text": "Pidove (Day/Morning)",
+            "pokemon_names": [
+              "Pidove"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Pidove (Day/Morning)"
+          },
+          {
+            "pokemon_text": "Sewaddle (Day/Morning)",
+            "pokemon_names": [
+              "Sewaddle"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Sewaddle (Day/Morning)"
+          },
+          {
+            "pokemon_text": "Venipede (Night)",
+            "pokemon_names": [
+              "Venipede"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Venipede (Night)"
+          },
+          {
+            "pokemon_text": "Whirlipede (Night)",
+            "pokemon_names": [
+              "Whirlipede"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Whirlipede (Night)"
+          },
+          {
+            "pokemon_text": "Cottonee (DayMorning)",
+            "pokemon_names": [
+              "Cottonee"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Cottonee (DayMorning)"
+          },
+          {
+            "pokemon_text": "Petilil (Day/Morning)",
+            "pokemon_names": [
+              "Petilil"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Petilil (Day/Morning)"
+          }
+        ]
+      },
+      {
+        "location": "Relic Castle",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Yamask F1 B1",
+            "pokemon_names": [
+              "Yamask"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Yamask x3 F1 B1"
+          },
+          {
+            "pokemon_text": "Sandile F1 B1",
+            "pokemon_names": [
+              "Sandile"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Sandile x3 F1 B1"
+          },
+          {
+            "pokemon_text": "Cofagrigus B2",
+            "pokemon_names": [
+              "Cofagrigus"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10DEF"
+            ],
+            "notes": "Cofagrigus B2 10DEF"
+          },
+          {
+            "pokemon_text": "Krokorok B4",
+            "pokemon_names": [
+              "Krokorok"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10ATK"
+            ],
+            "notes": "Krokorok B4 10ATK"
+          },
+          {
+            "pokemon_text": "Sandslash B5",
+            "pokemon_names": [
+              "Sandslash"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Sandslash B5"
+          },
+          {
+            "pokemon_text": "Onix B5",
+            "pokemon_names": [
+              "Onix"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Onix B5"
+          },
+          {
+            "pokemon_text": "Claydol B5 Volcarona Room",
+            "pokemon_names": [
+              "Claydol Volcarona Room"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SDEF"
+            ],
+            "notes": "Claydol B5 Volcarona Room 10SDEF"
+          }
+        ]
+      },
+      {
+        "location": "Twist Mountain",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Gurdurr Route 7 Entrance",
+            "pokemon_names": [
+              "Gurdurr Route 7 Entrance"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10ATK"
+            ],
+            "notes": "Gurdurr Route 7 Entrance 10ATK"
+          },
+          {
+            "pokemon_text": "Boldore",
+            "pokemon_names": [
+              "Boldore"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Boldore"
+          },
+          {
+            "pokemon_text": "Woobat",
+            "pokemon_names": [
+              "Woobat"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Woobat"
+          },
+          {
+            "pokemon_text": "Cubchoo B3 F1 F2 B3 (Winter)",
+            "pokemon_names": [
+              "Cubchoo"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Cubchoo B3 F1 F2 B3 (Winter)"
+          },
+          {
+            "pokemon_text": "Cryogonal B3 (Winter)",
+            "pokemon_names": [
+              "Cryogonal"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Cryogonal B3 (Winter)"
+          }
+        ]
+      },
+      {
+        "location": "Undella Town",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Mantine",
+            "pokemon_names": [
+              "Mantine"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SDEF"
+            ],
+            "notes": "Mantine 10SDEF"
+          }
+        ]
+      },
+      {
+        "location": "Victory Road",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Heatmor Outside",
+            "pokemon_names": [
+              "Heatmor Outside"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SATK"
+            ],
+            "notes": "Heatmor Outside 10SATK"
+          },
+          {
+            "pokemon_text": "Boldore",
+            "pokemon_names": [
+              "Boldore"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Boldore"
+          },
+          {
+            "pokemon_text": "Deino/Durant South Entrance",
+            "pokemon_names": [
+              "Deino",
+              "Durant South Entrance"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Deino/Durant South Entrance"
+          },
+          {
+            "pokemon_text": "Deino/Mienfoo F1 East Room",
+            "pokemon_names": [
+              "Deino",
+              "Mienfoo East Room"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Deino/Mienfoo F1 East Room"
+          },
+          {
+            "pokemon_text": "Mienfoo 3F Middle Room",
+            "pokemon_names": [
+              "Mienfoo 3F Middle Room"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Mienfoo 3F Middle Room"
+          },
+          {
+            "pokemon_text": "Woobat 4F Middle Room",
+            "pokemon_names": [
+              "Woobat 4F Middle Room"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Woobat 4F Middle Room"
+          }
+        ]
+      },
+      {
+        "location": "Village Bridge",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Vullaby",
+            "pokemon_names": [
+              "Vullaby"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Vullaby"
+          },
+          {
+            "pokemon_text": "Rufflet (Day/Morning)",
+            "pokemon_names": [
+              "Rufflet"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Rufflet (Day/Morning)"
+          },
+          {
+            "pokemon_text": "Bibarel (Night)",
+            "pokemon_names": [
+              "Bibarel"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Bibarel (Night)"
+          },
+          {
+            "pokemon_text": "Bibarel",
+            "pokemon_names": [
+              "Bibarel"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Bibarel"
+          }
+        ]
+      },
+      {
+        "location": "Wellspring Cave",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Boldore B1",
+            "pokemon_names": [
+              "Boldore"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Boldore B1"
+          },
+          {
+            "pokemon_text": "Woobat B1",
+            "pokemon_names": [
+              "Woobat"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Woobat B1"
+          }
+        ]
+      }
+    ],
+    "Sinnoh": [
+      {
+        "location": "Route 203",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Psyduck",
+            "pokemon_names": [
+              "Psyduck"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Psyduck"
+          }
+        ]
+      },
+      {
+        "location": "Route 204",
+        "default_horde_size": 3,
+        "notes": "(North of Ravaged Path)",
+        "encounters": [
+          {
+            "pokemon_text": "Bidoof",
+            "pokemon_names": [
+              "Bidoof"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Bidoof"
+          },
+          {
+            "pokemon_text": "Wurmple",
+            "pokemon_names": [
+              "Wurmple"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Wurmple"
+          },
+          {
+            "pokemon_text": "Kricketot (Night)",
+            "pokemon_names": [
+              "Kricketot"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Kricketot (Night)"
+          },
+          {
+            "pokemon_text": "Psyduck",
+            "pokemon_names": [
+              "Psyduck"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Psyduck"
+          }
+        ]
+      },
+      {
+        "location": "Route 205",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Buizel",
+            "pokemon_names": [
+              "Buizel"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Buizel"
+          },
+          {
+            "pokemon_text": "Bidoof",
+            "pokemon_names": [
+              "Bidoof"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Bidoof"
+          },
+          {
+            "pokemon_text": "Shellos",
+            "pokemon_names": [
+              "Shellos"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Shellos x5"
+          }
+        ]
+      },
+      {
+        "location": "Route 206",
+        "default_horde_size": 3,
+        "notes": "(Cut)",
+        "encounters": [
+          {
+            "pokemon_text": "Ponyta",
+            "pokemon_names": [
+              "Ponyta"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Ponyta"
+          },
+          {
+            "pokemon_text": "Stunky",
+            "pokemon_names": [
+              "Stunky"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Stunky"
+          }
+        ]
+      },
+      {
+        "location": "Route 208",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Psyduck",
+            "pokemon_names": [
+              "Psyduck"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Psyduck"
+          },
+          {
+            "pokemon_text": "Budew",
+            "pokemon_names": [
+              "Budew"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Budew"
+          },
+          {
+            "pokemon_text": "Zubat (Night)",
+            "pokemon_names": [
+              "Zubat"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Zubat (Night)"
+          }
+        ]
+      },
+      {
+        "location": "Route 209",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Bibarel",
+            "pokemon_names": [
+              "Bibarel"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Bibarel"
+          },
+          {
+            "pokemon_text": "Ralts",
+            "pokemon_names": [
+              "Ralts"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Ralts"
+          },
+          {
+            "pokemon_text": "Psyduck",
+            "pokemon_names": [
+              "Psyduck"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Psyduck x5"
+          }
+        ]
+      },
+      {
+        "location": "Route 210",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Staravia",
+            "pokemon_names": [
+              "Staravia"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Staravia"
+          },
+          {
+            "pokemon_text": "Ponyta",
+            "pokemon_names": [
+              "Ponyta"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Ponyta"
+          },
+          {
+            "pokemon_text": "Kricketune (Night)",
+            "pokemon_names": [
+              "Kricketune"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Kricketune (Night)"
+          },
+          {
+            "pokemon_text": "Psyduck",
+            "pokemon_names": [
+              "Psyduck"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Psyduck x5"
+          }
+        ]
+      },
+      {
+        "location": "Swablu",
+        "default_horde_size": 5,
+        "notes": "West",
+        "encounters": []
+      },
+      {
+        "location": "Route 211",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Meditite",
+            "pokemon_names": [
+              "Meditite"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Meditite"
+          },
+          {
+            "pokemon_text": "Bidoof",
+            "pokemon_names": [
+              "Bidoof"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Bidoof"
+          }
+        ]
+      },
+      {
+        "location": "Machoke",
+        "default_horde_size": 5,
+        "notes": "East 10ATK",
+        "encounters": []
+      },
+      {
+        "location": "Route 212",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Staravia (Day/Morning)",
+            "pokemon_names": [
+              "Staravia"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Staravia (Day/Morning)"
+          },
+          {
+            "pokemon_text": "Kricketune (Night)",
+            "pokemon_names": [
+              "Kricketune"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Kricketune (Night)"
+          },
+          {
+            "pokemon_text": "Shellos",
+            "pokemon_names": [
+              "Shellos"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Shellos"
+          },
+          {
+            "pokemon_text": "Quagsire",
+            "pokemon_names": [
+              "Quagsire"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Quagsire"
+          },
+          {
+            "pokemon_text": "Psyduck (Pond)",
+            "pokemon_names": [
+              "Psyduck"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Psyduck x5 (Pond)"
+          },
+          {
+            "pokemon_text": "Shellos",
+            "pokemon_names": [
+              "Shellos"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Shellos x5"
+          },
+          {
+            "pokemon_text": "Wooper",
+            "pokemon_names": [
+              "Wooper"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Wooper x5"
+          }
+        ]
+      },
+      {
+        "location": "Route 213",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Buizel",
+            "pokemon_names": [
+              "Buizel"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Buizel"
+          },
+          {
+            "pokemon_text": "Shellos",
+            "pokemon_names": [
+              "Shellos"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Shellos"
+          },
+          {
+            "pokemon_text": "Chatot (Day/Morning)",
+            "pokemon_names": [
+              "Chatot"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Chatot (Day/Morning)"
+          }
+        ]
+      },
+      {
+        "location": "Route 214",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Stunky",
+            "pokemon_names": [
+              "Stunky"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Stunky"
+          },
+          {
+            "pokemon_text": "Rhyhorn",
+            "pokemon_names": [
+              "Rhyhorn"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Rhyhorn"
+          },
+          {
+            "pokemon_text": "Psyduck",
+            "pokemon_names": [
+              "Psyduck"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Psyduck x5"
+          }
+        ]
+      },
+      {
+        "location": "Route 215",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Marill",
+            "pokemon_names": [
+              "Marill"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Marill"
+          },
+          {
+            "pokemon_text": "Staravia (Day/Morning)",
+            "pokemon_names": [
+              "Staravia"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Staravia (Day/Morning)"
+          }
+        ]
+      },
+      {
+        "location": "Route 216",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Snover",
+            "pokemon_names": [
+              "Snover"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Snover"
+          },
+          {
+            "pokemon_text": "Sneasel",
+            "pokemon_names": [
+              "Sneasel"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Sneasel"
+          }
+        ]
+      },
+      {
+        "location": "Route 217",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Swinub",
+            "pokemon_names": [
+              "Swinub"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Swinub"
+          },
+          {
+            "pokemon_text": "Snover",
+            "pokemon_names": [
+              "Snover"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Snover"
+          }
+        ]
+      },
+      {
+        "location": "Route 218",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Floatzel",
+            "pokemon_names": [
+              "Floatzel"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SPEED"
+            ],
+            "notes": "Floatzel 10SPEED"
+          }
+        ]
+      },
+      {
+        "location": "Route 221",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Gastrodon",
+            "pokemon_names": [
+              "Gastrodon"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10HP"
+            ],
+            "notes": "Gastrodon 10HP"
+          }
+        ]
+      },
+      {
+        "location": "Route 222",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Floatzel",
+            "pokemon_names": [
+              "Floatzel"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SPEED"
+            ],
+            "notes": "Floatzel 10SPEED"
+          },
+          {
+            "pokemon_text": "Electabuzz (Day/Morning)",
+            "pokemon_names": [
+              "Electabuzz"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SPEED"
+            ],
+            "notes": "Electabuzz (Day/Morning) 10SPEED"
+          }
+        ]
+      },
+      {
+        "location": "Route 224",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Gastrodon",
+            "pokemon_names": [
+              "Gastrodon"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10HP"
+            ],
+            "notes": "Gastrodon 10HP"
+          }
+        ]
+      },
+      {
+        "location": "Route 225",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Raticate",
+            "pokemon_names": [
+              "Raticate"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SPEED"
+            ],
+            "notes": "Raticate 10SPEED"
+          },
+          {
+            "pokemon_text": "Fearow (Day/Morning)",
+            "pokemon_names": [
+              "Fearow"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SPEED"
+            ],
+            "notes": "Fearow (Day/Morning) 10SPEED"
+          },
+          {
+            "pokemon_text": "Golduck",
+            "pokemon_names": [
+              "Golduck"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SATK"
+            ],
+            "notes": "Golduck 10SATK"
+          }
+        ]
+      },
+      {
+        "location": "Route 226",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Fearow (Day/Morning)",
+            "pokemon_names": [
+              "Fearow"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Fearow (Day/Morning)"
+          },
+          {
+            "pokemon_text": "Banette (Night)",
+            "pokemon_names": [
+              "Banette"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Banette (Night)"
+          },
+          {
+            "pokemon_text": "Raticate (Day/Morning) (Winter)",
+            "pokemon_names": [
+              "Raticate"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Raticate (Day/Morning) (Winter)"
+          },
+          {
+            "pokemon_text": "Dewgong",
+            "pokemon_names": [
+              "Dewgong"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Dewgong"
+          },
+          {
+            "pokemon_text": "Sealeo",
+            "pokemon_names": [
+              "Sealeo"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Sealeo"
+          }
+        ]
+      },
+      {
+        "location": "Route 227",
+        "default_horde_size": 5,
+        "notes": "(Rock Climb)",
+        "encounters": [
+          {
+            "pokemon_text": "Camerupt",
+            "pokemon_names": [
+              "Camerupt"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Camerupt"
+          },
+          {
+            "pokemon_text": "Fearow (Day/Morning)",
+            "pokemon_names": [
+              "Fearow"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Fearow (Day/Morning)"
+          },
+          {
+            "pokemon_text": "Banette (Night)",
+            "pokemon_names": [
+              "Banette"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Banette (Night)"
+          },
+          {
+            "pokemon_text": "Poliwhirl",
+            "pokemon_names": [
+              "Poliwhirl"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SPEED"
+            ],
+            "notes": "Poliwhirl 10SPEED"
+          }
+        ]
+      },
+      {
+        "location": "Route 228",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Dugtrio",
+            "pokemon_names": [
+              "Dugtrio"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SPEED"
+            ],
+            "notes": "Dugtrio 10SPEED"
+          },
+          {
+            "pokemon_text": "Poliwhirl",
+            "pokemon_names": [
+              "Poliwhirl"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SPEED"
+            ],
+            "notes": "Poliwhirl 10SPEED"
+          }
+        ]
+      },
+      {
+        "location": "Route 229",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Purugly",
+            "pokemon_names": [
+              "Purugly"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Purugly"
+          },
+          {
+            "pokemon_text": "Roselia",
+            "pokemon_names": [
+              "Roselia"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Roselia"
+          },
+          {
+            "pokemon_text": "Surskit",
+            "pokemon_names": [
+              "Surskit"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Surskit"
+          },
+          {
+            "pokemon_text": "Psyduck",
+            "pokemon_names": [
+              "Psyduck"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Psyduck"
+          }
+        ]
+      },
+      {
+        "location": "Route 230",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Roselia",
+            "pokemon_names": [
+              "Roselia"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SATK"
+            ],
+            "notes": "Roselia 10SATK"
+          },
+          {
+            "pokemon_text": "Sealeo",
+            "pokemon_names": [
+              "Sealeo"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10HP"
+            ],
+            "notes": "Sealeo 10HP"
+          }
+        ]
+      },
+      {
+        "location": "Acuity Lakefront",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Snover (Day/Morning)",
+            "pokemon_names": [
+              "Snover"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Snover (Day/Morning)"
+          },
+          {
+            "pokemon_text": "Noctowl (Night)",
+            "pokemon_names": [
+              "Noctowl"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Noctowl (Night)"
+          }
+        ]
+      },
+      {
+        "location": "Celestic Town",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Psyduck",
+            "pokemon_names": [
+              "Psyduck"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Psyduck"
+          }
+        ]
+      },
+      {
+        "location": "Eterna City",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Psyduck",
+            "pokemon_names": [
+              "Psyduck"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Psyduck"
+          }
+        ]
+      },
+      {
+        "location": "Eterna Forest",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Budew",
+            "pokemon_names": [
+              "Budew"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Budew"
+          },
+          {
+            "pokemon_text": "Buneary",
+            "pokemon_names": [
+              "Buneary"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Buneary"
+          },
+          {
+            "pokemon_text": "Hoothoot (Night)",
+            "pokemon_names": [
+              "Hoothoot"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Hoothoot (Night)"
+          }
+        ]
+      },
+      {
+        "location": "Fuego Ironworks",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Luxio",
+            "pokemon_names": [
+              "Luxio"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Luxio"
+          },
+          {
+            "pokemon_text": "Magmar (Day/Morning)",
+            "pokemon_names": [
+              "Magmar"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Magmar (Day/Morning)"
+          }
+        ]
+      },
+      {
+        "location": "Iron Island",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Geodude DAMP",
+            "pokemon_names": [
+              "Geodude"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Geodude DAMP"
+          },
+          {
+            "pokemon_text": "Graveler B1 West DAMP",
+            "pokemon_names": [
+              "Graveler West"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Graveler B1 West DAMP"
+          },
+          {
+            "pokemon_text": "Golbat B1 East",
+            "pokemon_names": [
+              "Golbat East"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Golbat B1 East"
+          },
+          {
+            "pokemon_text": "Onix B2 West",
+            "pokemon_names": [
+              "Onix West"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Onix B2 West"
+          }
+        ]
+      },
+      {
+        "location": "Lake Acuity",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Snover",
+            "pokemon_names": [
+              "Snover"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Snover"
+          },
+          {
+            "pokemon_text": "Snorunt (Night)",
+            "pokemon_names": [
+              "Snorunt"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Snorunt (Night)"
+          },
+          {
+            "pokemon_text": "Psyduck",
+            "pokemon_names": [
+              "Psyduck"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Psyduck"
+          }
+        ]
+      },
+      {
+        "location": "Lake Valor",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Bibarel",
+            "pokemon_names": [
+              "Bibarel"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10ATK"
+            ],
+            "notes": "Bibarel 10ATK"
+          },
+          {
+            "pokemon_text": "Psyduck",
+            "pokemon_names": [
+              "Psyduck"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Psyduck"
+          }
+        ]
+      },
+      {
+        "location": "Lake Verity",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Psyduck",
+            "pokemon_names": [
+              "Psyduck"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Psyduck"
+          }
+        ]
+      },
+      {
+        "location": "Lost Tower",
+        "default_horde_size": 3,
+        "notes": "(Defog), Route 209",
+        "encounters": [
+          {
+            "pokemon_text": "Zubat F1 F4 F5",
+            "pokemon_names": [
+              "Zubat"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Zubat F1 F4 F5"
+          },
+          {
+            "pokemon_text": "Gastly F2 F4 F5",
+            "pokemon_names": [
+              "Gastly"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Gastly F2 F4 F5"
+          },
+          {
+            "pokemon_text": "Duskull F3",
+            "pokemon_names": [
+              "Duskull"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Duskull F3"
+          },
+          {
+            "pokemon_text": "Misdreavus F4 (Night)",
+            "pokemon_names": [
+              "Misdreavus"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Misdreavus F4 (Night)"
+          },
+          {
+            "pokemon_text": "Murkrow F5 (Night)",
+            "pokemon_names": [
+              "Murkrow"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Murkrow F5 (Night)"
+          }
+        ]
+      },
+      {
+        "location": "Maniac Tunnel",
+        "default_horde_size": 3,
+        "notes": "(Need all 26 Unowns to clear the cave)",
+        "encounters": [
+          {
+            "pokemon_text": "Geodude DAMP",
+            "pokemon_names": [
+              "Geodude"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Geodude DAMP"
+          },
+          {
+            "pokemon_text": "Hippopotas",
+            "pokemon_names": [
+              "Hippopotas"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Hippopotas"
+          }
+        ]
+      },
+      {
+        "location": "Mt. Coronet",
+        "default_horde_size": 5,
+        "notes": "(Rock Smash, Strength, Waterfall & Rock Climb)",
+        "encounters": [
+          {
+            "pokemon_text": "Geodude F1",
+            "pokemon_names": [
+              "Geodude"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Geodude x3 F1"
+          },
+          {
+            "pokemon_text": "Machop F1",
+            "pokemon_names": [
+              "Machop"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Machop x3 F1"
+          },
+          {
+            "pokemon_text": "Bronzor F2 F7",
+            "pokemon_names": [
+              "Bronzor"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Bronzor F2 F7"
+          },
+          {
+            "pokemon_text": "Bronzong F2 F3 F5 F6 F7",
+            "pokemon_names": [
+              "Bronzong"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Bronzong F2 F3 F5 F6 F7"
+          },
+          {
+            "pokemon_text": "Medicham F3",
+            "pokemon_names": [
+              "Medicham"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Medicham F3"
+          },
+          {
+            "pokemon_text": "Abomasnow F3 Outside",
+            "pokemon_names": [
+              "Abomasnow Outside"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Abomasnow F3 Outside"
+          },
+          {
+            "pokemon_text": "Clefairy F5",
+            "pokemon_names": [
+              "Clefairy"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Clefairy F5"
+          },
+          {
+            "pokemon_text": "Machoke F5 North",
+            "pokemon_names": [
+              "Machoke North"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Machoke F5 North"
+          },
+          {
+            "pokemon_text": "Graveler F5 NE DAMP",
+            "pokemon_names": [
+              "Graveler NE"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Graveler F5 NE DAMP"
+          },
+          {
+            "pokemon_text": "Nosepass F6",
+            "pokemon_names": [
+              "Nosepass"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Nosepass F6"
+          },
+          {
+            "pokemon_text": "Chimecho F7",
+            "pokemon_names": [
+              "Chimecho"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Chimecho F7"
+          },
+          {
+            "pokemon_text": "Meditite F7 North",
+            "pokemon_names": [
+              "Meditite North"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Meditite F7 North"
+          },
+          {
+            "pokemon_text": "Zubat",
+            "pokemon_names": [
+              "Zubat"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Zubat"
+          },
+          {
+            "pokemon_text": "Golbat",
+            "pokemon_names": [
+              "Golbat"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Golbat"
+          }
+        ]
+      },
+      {
+        "location": "Old Chateau",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Gastly",
+            "pokemon_names": [
+              "Gastly"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Gastly"
+          }
+        ]
+      },
+      {
+        "location": "Oreburgh Gate",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Zubat F1",
+            "pokemon_names": [
+              "Zubat"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Zubat F1"
+          },
+          {
+            "pokemon_text": "Psyduck",
+            "pokemon_names": [
+              "Psyduck"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Psyduck x5"
+          }
+        ]
+      },
+      {
+        "location": "Ravaged Path",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Golbat",
+            "pokemon_names": [
+              "Golbat"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Golbat"
+          }
+        ]
+      },
+      {
+        "location": "Resort Area",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Golduck",
+            "pokemon_names": [
+              "Golduck"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SATK"
+            ],
+            "notes": "Golduck 10SATK"
+          }
+        ]
+      },
+      {
+        "location": "Ruin Maniac Cave",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Geodude",
+            "pokemon_names": [
+              "Geodude"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Geodude"
+          },
+          {
+            "pokemon_text": "Zubat",
+            "pokemon_names": [
+              "Zubat"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Zubat"
+          }
+        ]
+      },
+      {
+        "location": "Sendoff Spring",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Bibarel",
+            "pokemon_names": [
+              "Bibarel"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10ATK"
+            ],
+            "notes": "Bibarel 10ATK"
+          },
+          {
+            "pokemon_text": "Golduck",
+            "pokemon_names": [
+              "Golduck"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SATK"
+            ],
+            "notes": "Golduck 10SATK"
+          }
+        ]
+      },
+      {
+        "location": "Snowpoint Temple",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Onix Entrance B1",
+            "pokemon_names": [
+              "Onix Entrance"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Onix Entrance B1"
+          },
+          {
+            "pokemon_text": "Golbat B1 B2 B3",
+            "pokemon_names": [
+              "Golbat"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Golbat B1 B2 B3"
+          },
+          {
+            "pokemon_text": "Sneasel B3 B4 B5",
+            "pokemon_names": [
+              "Sneasel"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Sneasel B3 B4 B5"
+          },
+          {
+            "pokemon_text": "Jynx B5",
+            "pokemon_names": [
+              "Jynx"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Jynx B5"
+          }
+        ]
+      },
+      {
+        "location": "Stark Mountain",
+        "default_horde_size": 5,
+        "notes": "(Rock Climb)",
+        "encounters": [
+          {
+            "pokemon_text": "Camerupt",
+            "pokemon_names": [
+              "Camerupt"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "5ATK",
+              "5SATK"
+            ],
+            "notes": "Camerupt 5ATK 5SATK"
+          },
+          {
+            "pokemon_text": "Magcargo",
+            "pokemon_names": [
+              "Magcargo"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10DEF"
+            ],
+            "notes": "Magcargo 10DEF"
+          }
+        ]
+      },
+      {
+        "location": "Trophy Garden",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Pikachu",
+            "pokemon_names": [
+              "Pikachu"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Pikachu"
+          }
+        ]
+      },
+      {
+        "location": "Turnback Cave",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Haunter",
+            "pokemon_names": [
+              "Haunter"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SATK"
+            ],
+            "notes": "Haunter 10SATK"
+          }
+        ]
+      },
+      {
+        "location": "Twinleaf Town",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Psyduck",
+            "pokemon_names": [
+              "Psyduck"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Psyduck"
+          }
+        ]
+      },
+      {
+        "location": "Valley Windworks",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Shinx",
+            "pokemon_names": [
+              "Shinx"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Shinx"
+          },
+          {
+            "pokemon_text": "Pachirisu",
+            "pokemon_names": [
+              "Pachirisu"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Pachirisu"
+          },
+          {
+            "pokemon_text": "Shellos",
+            "pokemon_names": [
+              "Shellos"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Shellos"
+          }
+        ]
+      },
+      {
+        "location": "Valor Lakefront",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Girafarig",
+            "pokemon_names": [
+              "Girafarig"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Girafarig"
+          },
+          {
+            "pokemon_text": "Houndour (Night)",
+            "pokemon_names": [
+              "Houndour"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Houndour (Night)"
+          },
+          {
+            "pokemon_text": "Staravia (Day/Morning) (Winter)",
+            "pokemon_names": [
+              "Staravia"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Staravia (Day/Morning) (Winter)"
+          },
+          {
+            "pokemon_text": "Bibarel (Day/Morning) (Winter)",
+            "pokemon_names": [
+              "Bibarel"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Bibarel (Day/Morning) (Winter)"
+          }
+        ]
+      },
+      {
+        "location": "Victory Road",
+        "default_horde_size": 5,
+        "notes": "(Rock Climb, Strength & Defog)",
+        "encounters": [
+          {
+            "pokemon_text": "Rhydon F1 (South of Pokemon League)",
+            "pokemon_names": [
+              "Rhydon"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10ATK"
+            ],
+            "notes": "Rhydon F1 (South of Pokemon League) 10ATK"
+          },
+          {
+            "pokemon_text": "Graveler F1 East tunnel R1 DAMP",
+            "pokemon_names": [
+              "Graveler East tunnel"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Graveler F1 East tunnel R1 DAMP"
+          },
+          {
+            "pokemon_text": "Gabite/Floatzel F1 East tunnel R2",
+            "pokemon_names": [
+              "Gabite",
+              "Floatzel East tunnel"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Gabite/Floatzel F1 East tunnel R2"
+          },
+          {
+            "pokemon_text": "Medicham/Floatzel F1 East tunnel R3",
+            "pokemon_names": [
+              "Medicham",
+              "Floatzel East tunnel"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SPEED"
+            ],
+            "notes": "Medicham/Floatzel F1 East tunnel R3 10SPEED"
+          },
+          {
+            "pokemon_text": "Azumarill/Floatzel B1 East",
+            "pokemon_names": [
+              "Azumarill",
+              "Floatzel East"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Azumarill/Floatzel B1 East"
+          },
+          {
+            "pokemon_text": "Kadabra F2 West",
+            "pokemon_names": [
+              "Kadabra West"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SATK"
+            ],
+            "notes": "Kadabra F2 West 10SATK"
+          },
+          {
+            "pokemon_text": "Dewgong F1 East tunnel R2",
+            "pokemon_names": [
+              "Dewgong East tunnel"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SDEF"
+            ],
+            "notes": "Dewgong F1 East tunnel R2 10SDEF"
+          },
+          {
+            "pokemon_text": "Golbat",
+            "pokemon_names": [
+              "Golbat"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SPEED"
+            ],
+            "notes": "Golbat 10SPEED"
+          }
+        ]
+      },
+      {
+        "location": "Wayward Cave",
+        "default_horde_size": 3,
+        "notes": "(Cut & Flash)",
+        "encounters": [
+          {
+            "pokemon_text": "Bronzor F1",
+            "pokemon_names": [
+              "Bronzor"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Bronzor F1"
+          },
+          {
+            "pokemon_text": "Gible/Bronzor B1",
+            "pokemon_names": [
+              "Gible",
+              "Bronzor"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Gible/Bronzor B1"
+          }
+        ]
+      }
+    ],
+    "Johto": [
+      {
+        "location": "Route 26",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Sandslash",
+            "pokemon_names": [
+              "Sandslash"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10DEF"
+            ],
+            "notes": "Sandslash 10DEF"
+          },
+          {
+            "pokemon_text": "Tentacruel",
+            "pokemon_names": [
+              "Tentacruel"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SDEF"
+            ],
+            "notes": "Tentacruel 10SDEF"
+          }
+        ]
+      },
+      {
+        "location": "Route 27",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Arbok",
+            "pokemon_names": [
+              "Arbok"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10ATK"
+            ],
+            "notes": "Arbok 10ATK"
+          },
+          {
+            "pokemon_text": "Dodrio (Day/Morning)",
+            "pokemon_names": [
+              "Dodrio"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10ATK"
+            ],
+            "notes": "Dodrio (Day/Morning) 10ATK"
+          },
+          {
+            "pokemon_text": "Tentacool",
+            "pokemon_names": [
+              "Tentacool"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Tentacool"
+          }
+        ]
+      },
+      {
+        "location": "Route 28",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Rapidash",
+            "pokemon_names": [
+              "Rapidash"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Rapidash"
+          },
+          {
+            "pokemon_text": "Tangela",
+            "pokemon_names": [
+              "Tangela"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Tangela"
+          },
+          {
+            "pokemon_text": "Poliwhirl",
+            "pokemon_names": [
+              "Poliwhirl"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SPEED"
+            ],
+            "notes": "Poliwhirl 10SPEED"
+          }
+        ]
+      },
+      {
+        "location": "Route 30",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Poliwag",
+            "pokemon_names": [
+              "Poliwag"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Poliwag"
+          }
+        ]
+      },
+      {
+        "location": "Route 31",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Poliwag",
+            "pokemon_names": [
+              "Poliwag"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Poliwag"
+          }
+        ]
+      },
+      {
+        "location": "Route 32",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Wooper",
+            "pokemon_names": [
+              "Wooper"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Wooper"
+          }
+        ]
+      },
+      {
+        "location": "Route 33",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Hoppip (Day/Morning)",
+            "pokemon_names": [
+              "Hoppip"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Hoppip (Day/Morning)"
+          },
+          {
+            "pokemon_text": "Rattata (Night)",
+            "pokemon_names": [
+              "Rattata"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Rattata (Night)"
+          }
+        ]
+      },
+      {
+        "location": "Route 34",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Drowzee",
+            "pokemon_names": [
+              "Drowzee"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Drowzee"
+          },
+          {
+            "pokemon_text": "Snubbull (Day/Morning)",
+            "pokemon_names": [
+              "Snubbull"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Snubbull (Day/Morning)"
+          },
+          {
+            "pokemon_text": "Tentacool",
+            "pokemon_names": [
+              "Tentacool"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Tentacool x5"
+          }
+        ]
+      },
+      {
+        "location": "Route 35",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Nidoran♀",
+            "pokemon_names": [
+              "Nidoran♀"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Nidoran♀"
+          },
+          {
+            "pokemon_text": "Nidoran♂",
+            "pokemon_names": [
+              "Nidoran♂"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Nidoran♂"
+          },
+          {
+            "pokemon_text": "Psyduck",
+            "pokemon_names": [
+              "Psyduck"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Psyduck x5"
+          }
+        ]
+      },
+      {
+        "location": "Route 36",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Growlithe (Day/Morning)",
+            "pokemon_names": [
+              "Growlithe"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Growlithe (Day/Morning)"
+          },
+          {
+            "pokemon_text": "Vulpix (Night/Morning)",
+            "pokemon_names": [
+              "Vulpix"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Vulpix (Night/Morning)"
+          }
+        ]
+      },
+      {
+        "location": "Route 37",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Stantler",
+            "pokemon_names": [
+              "Stantler"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Stantler"
+          }
+        ]
+      },
+      {
+        "location": "Route 38",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Magnemite",
+            "pokemon_names": [
+              "Magnemite"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Magnemite"
+          }
+        ]
+      },
+      {
+        "location": "Route 39",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Raticate",
+            "pokemon_names": [
+              "Raticate"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SPEED"
+            ],
+            "notes": "Raticate 10SPEED"
+          },
+          {
+            "pokemon_text": "Pidgeotto (Day/Morning)",
+            "pokemon_names": [
+              "Pidgeotto"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SPEED"
+            ],
+            "notes": "Pidgeotto (Day/Morning) 10SPEED"
+          }
+        ]
+      },
+      {
+        "location": "Route 40",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Tentacool",
+            "pokemon_names": [
+              "Tentacool"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Tentacool"
+          }
+        ]
+      },
+      {
+        "location": "Route 41",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Mantine",
+            "pokemon_names": [
+              "Mantine"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SDEF"
+            ],
+            "notes": "Mantine 10SDEF"
+          }
+        ]
+      },
+      {
+        "location": "Route 42",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Mareep",
+            "pokemon_names": [
+              "Mareep"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Mareep"
+          },
+          {
+            "pokemon_text": "Mankey",
+            "pokemon_names": [
+              "Mankey"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Mankey"
+          },
+          {
+            "pokemon_text": "Goldeen",
+            "pokemon_names": [
+              "Goldeen"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Goldeen"
+          }
+        ]
+      },
+      {
+        "location": "Route 43",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Girafarig",
+            "pokemon_names": [
+              "Girafarig"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SATK"
+            ],
+            "notes": "Girafarig 10SATK"
+          },
+          {
+            "pokemon_text": "Flaaffy",
+            "pokemon_names": [
+              "Flaaffy"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SATK"
+            ],
+            "notes": "Flaaffy 10SATK"
+          },
+          {
+            "pokemon_text": "Magikarp",
+            "pokemon_names": [
+              "Magikarp"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Magikarp"
+          }
+        ]
+      },
+      {
+        "location": "Route 44",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Lickitung",
+            "pokemon_names": [
+              "Lickitung"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10HP"
+            ],
+            "notes": "Lickitung 10HP"
+          },
+          {
+            "pokemon_text": "Poliwhirl",
+            "pokemon_names": [
+              "Poliwhirl"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SPEED"
+            ],
+            "notes": "Poliwhirl 10SPEED"
+          }
+        ]
+      },
+      {
+        "location": "Route 45",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Graveler",
+            "pokemon_names": [
+              "Graveler"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Graveler"
+          },
+          {
+            "pokemon_text": "Gligar",
+            "pokemon_names": [
+              "Gligar"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Gligar"
+          },
+          {
+            "pokemon_text": "Magikarp",
+            "pokemon_names": [
+              "Magikarp"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Magikarp"
+          }
+        ]
+      },
+      {
+        "location": "Route 47",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Miltank",
+            "pokemon_names": [
+              "Miltank"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Miltank"
+          },
+          {
+            "pokemon_text": "Raticate",
+            "pokemon_names": [
+              "Raticate"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Raticate"
+          },
+          {
+            "pokemon_text": "Noctowl (Night)",
+            "pokemon_names": [
+              "Noctowl"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Noctowl (Night)"
+          },
+          {
+            "pokemon_text": "Seel",
+            "pokemon_names": [
+              "Seel"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Seel"
+          }
+        ]
+      },
+      {
+        "location": "Route 48",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Gloom",
+            "pokemon_names": [
+              "Gloom"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Gloom"
+          },
+          {
+            "pokemon_text": "Tauros",
+            "pokemon_names": [
+              "Tauros"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Tauros"
+          },
+          {
+            "pokemon_text": "Fearow (Day/Morning)",
+            "pokemon_names": [
+              "Fearow"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Fearow (Day/Morning)"
+          }
+        ]
+      },
+      {
+        "location": "Bell Tower",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Raticate",
+            "pokemon_names": [
+              "Raticate"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Raticate"
+          },
+          {
+            "pokemon_text": "Haunter",
+            "pokemon_names": [
+              "Haunter"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Haunter"
+          }
+        ]
+      },
+      {
+        "location": "Blackthorn City",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Poliwhirl",
+            "pokemon_names": [
+              "Poliwhirl"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SPEED"
+            ],
+            "notes": "Poliwhirl 10SPEED"
+          }
+        ]
+      },
+      {
+        "location": "Burned Tower",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Rattata F1",
+            "pokemon_names": [
+              "Rattata"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Rattata F1"
+          },
+          {
+            "pokemon_text": "Koffing B1",
+            "pokemon_names": [
+              "Koffing"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Koffing B1"
+          }
+        ]
+      },
+      {
+        "location": "Cherrygrove City",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Tentacool",
+            "pokemon_names": [
+              "Tentacool"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Tentacool"
+          }
+        ]
+      },
+      {
+        "location": "Cianwood City",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Tentacool",
+            "pokemon_names": [
+              "Tentacool"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Tentacool"
+          }
+        ]
+      },
+      {
+        "location": "Cliff Cave",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Kingler",
+            "pokemon_names": [
+              "Kingler"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10ATK"
+            ],
+            "notes": "Kingler 10ATK"
+          },
+          {
+            "pokemon_text": "Machoke",
+            "pokemon_names": [
+              "Machoke"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10ATK"
+            ],
+            "notes": "Machoke 10ATK"
+          }
+        ]
+      },
+      {
+        "location": "Cliff Edge Gate",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Quagsire",
+            "pokemon_names": [
+              "Quagsire"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10HP"
+            ],
+            "notes": "Quagsire 10HP"
+          }
+        ]
+      },
+      {
+        "location": "Dark Cave",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Wobbuffet",
+            "pokemon_names": [
+              "Wobbuffet"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10HP"
+            ],
+            "notes": "Wobbuffet 10HP"
+          },
+          {
+            "pokemon_text": "Magikarp",
+            "pokemon_names": [
+              "Magikarp"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Magikarp"
+          }
+        ]
+      },
+      {
+        "location": "Dragon's Den",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Dratini",
+            "pokemon_names": [
+              "Dratini"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Dratini"
+          },
+          {
+            "pokemon_text": "Magikarp",
+            "pokemon_names": [
+              "Magikarp"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Magikarp"
+          }
+        ]
+      },
+      {
+        "location": "Ecruteak City",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Poliwag",
+            "pokemon_names": [
+              "Poliwag"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Poliwag"
+          }
+        ]
+      },
+      {
+        "location": "Ice Path",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Golbat F1 B1",
+            "pokemon_names": [
+              "Golbat"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Golbat F1 B1"
+          },
+          {
+            "pokemon_text": "Jynx B1 B2 B3",
+            "pokemon_names": [
+              "Jynx"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SATK"
+            ],
+            "notes": "Jynx B1 B2 B3 10SATK"
+          },
+          {
+            "pokemon_text": "Delibird B3",
+            "pokemon_names": [
+              "Delibird"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Delibird B3"
+          }
+        ]
+      },
+      {
+        "location": "Ilex Forest",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Pidgey (Day/Morning)",
+            "pokemon_names": [
+              "Pidgey"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Pidgey (Day/Morning)"
+          },
+          {
+            "pokemon_text": "Venonat (Night)",
+            "pokemon_names": [
+              "Venonat"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Venonat (Night)"
+          },
+          {
+            "pokemon_text": "Psyduck",
+            "pokemon_names": [
+              "Psyduck"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Psyduck x5"
+          }
+        ]
+      },
+      {
+        "location": "Lake of Rage",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Gyarados",
+            "pokemon_names": [
+              "Gyarados"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10ATK"
+            ],
+            "notes": "Gyarados 10ATK"
+          }
+        ]
+      },
+      {
+        "location": "Mt. Mortar",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Zubat F1",
+            "pokemon_names": [
+              "Zubat"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Zubat F1"
+          },
+          {
+            "pokemon_text": "Machop F1",
+            "pokemon_names": [
+              "Machop"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Machop F1"
+          },
+          {
+            "pokemon_text": "Rattata B1",
+            "pokemon_names": [
+              "Rattata"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Rattata B1"
+          },
+          {
+            "pokemon_text": "Machoke F2",
+            "pokemon_names": [
+              "Machoke"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10ATK"
+            ],
+            "notes": "Machoke F2 10ATK"
+          },
+          {
+            "pokemon_text": "Geodude F1back",
+            "pokemon_names": [
+              "Geodude F1back"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Geodude F1back"
+          },
+          {
+            "pokemon_text": "Marill B1",
+            "pokemon_names": [
+              "Marill"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10HP"
+            ],
+            "notes": "Marill B1 10HP"
+          },
+          {
+            "pokemon_text": "Mt. Silver Cave",
+            "pokemon_names": [
+              "Mt. Silver Cave"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Mt. Silver Cave"
+          },
+          {
+            "pokemon_text": "Donphan Outside Entrance",
+            "pokemon_names": [
+              "Donphan Outside Entrance"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Donphan Outside Entrance"
+          },
+          {
+            "pokemon_text": "Dodrio Outside Entrance (Day/Morning)",
+            "pokemon_names": [
+              "Dodrio Outside Entrance"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Dodrio Outside Entrance (Day/Morning)"
+          },
+          {
+            "pokemon_text": "Poliwhirl Outside Entrance",
+            "pokemon_names": [
+              "Poliwhirl Outside Entrance"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SPEED"
+            ],
+            "notes": "Poliwhirl Outside Entrance 10SPEED"
+          },
+          {
+            "pokemon_text": "Golbat Outside East",
+            "pokemon_names": [
+              "Golbat Outside East"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SPEED"
+            ],
+            "notes": "Golbat Outside East 10SPEED"
+          },
+          {
+            "pokemon_text": "Sneasel Outside Snow",
+            "pokemon_names": [
+              "Sneasel Outside Snow"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Sneasel Outside Snow"
+          },
+          {
+            "pokemon_text": "Machoke F1",
+            "pokemon_names": [
+              "Machoke"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Machoke F1"
+          },
+          {
+            "pokemon_text": "Graveler F1",
+            "pokemon_names": [
+              "Graveler"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Graveler F1"
+          },
+          {
+            "pokemon_text": "Golduck F1",
+            "pokemon_names": [
+              "Golduck"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Golduck F1"
+          },
+          {
+            "pokemon_text": "Seaking F1",
+            "pokemon_names": [
+              "Seaking"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Seaking F1"
+          },
+          {
+            "pokemon_text": "Parasect F2 E-belt chamber",
+            "pokemon_names": [
+              "Parasect E-belt chamber"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Parasect F2 E-belt chamber"
+          },
+          {
+            "pokemon_text": "Golduck F2 E-belt chamber",
+            "pokemon_names": [
+              "Golduck E-belt chamber"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Golduck F2 E-belt chamber"
+          },
+          {
+            "pokemon_text": "Steelix F2 Moltres chamber",
+            "pokemon_names": [
+              "Steelix Moltres chamber"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Steelix F2 Moltres chamber"
+          },
+          {
+            "pokemon_text": "Misdreavus F2 Moltres chamber (Night)",
+            "pokemon_names": [
+              "Misdreavus Moltres chamber"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Misdreavus F2 Moltres chamber (Night)"
+          },
+          {
+            "pokemon_text": "Ursaring F3",
+            "pokemon_names": [
+              "Ursaring"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Ursaring F3"
+          },
+          {
+            "pokemon_text": "Quagsire F3",
+            "pokemon_names": [
+              "Quagsire"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Quagsire F3"
+          },
+          {
+            "pokemon_text": "Larvitar F4",
+            "pokemon_names": [
+              "Larvitar"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Larvitar F4"
+          },
+          {
+            "pokemon_text": "Onix F4",
+            "pokemon_names": [
+              "Onix"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Onix F4"
+          }
+        ]
+      },
+      {
+        "location": "National Park",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Ledyba (Morning)",
+            "pokemon_names": [
+              "Ledyba"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Ledyba (Morning)"
+          },
+          {
+            "pokemon_text": "Sunkern (Day)",
+            "pokemon_names": [
+              "Sunkern"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Sunkern (Day)"
+          },
+          {
+            "pokemon_text": "Spinarak (Night)",
+            "pokemon_names": [
+              "Spinarak"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Spinarak (Night)"
+          }
+        ]
+      },
+      {
+        "location": "New Bark Town",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Tentacool",
+            "pokemon_names": [
+              "Tentacool"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Tentacool"
+          }
+        ]
+      },
+      {
+        "location": "Olivine City",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Tentacool",
+            "pokemon_names": [
+              "Tentacool"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Tentacool"
+          }
+        ]
+      },
+      {
+        "location": "Ruins of Alph",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Natu",
+            "pokemon_names": [
+              "Natu"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Natu"
+          },
+          {
+            "pokemon_text": "Smeargle",
+            "pokemon_names": [
+              "Smeargle"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Smeargle"
+          },
+          {
+            "pokemon_text": "Quagsire",
+            "pokemon_names": [
+              "Quagsire"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10HP"
+            ],
+            "notes": "Quagsire 10HP"
+          },
+          {
+            "pokemon_text": "Slowpoke Well",
+            "pokemon_names": [
+              "Slowpoke Well"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Slowpoke Well"
+          },
+          {
+            "pokemon_text": "Slowpoke",
+            "pokemon_names": [
+              "Slowpoke"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Slowpoke x3"
+          },
+          {
+            "pokemon_text": "Slowpoke",
+            "pokemon_names": [
+              "Slowpoke"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Slowpoke x5"
+          }
+        ]
+      },
+      {
+        "location": "Team Rocket HQ",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Geodude B1 B2",
+            "pokemon_names": [
+              "Geodude"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Geodude B1 B2"
+          },
+          {
+            "pokemon_text": "Voltorb B2 B3",
+            "pokemon_names": [
+              "Voltorb"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Voltorb B2 B3"
+          }
+        ]
+      },
+      {
+        "location": "Tohjo Falls",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Golbat",
+            "pokemon_names": [
+              "Golbat"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Golbat"
+          },
+          {
+            "pokemon_text": "Raticate",
+            "pokemon_names": [
+              "Raticate"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Raticate"
+          },
+          {
+            "pokemon_text": "Slowbro Hidden Room",
+            "pokemon_names": [
+              "Slowbro Hidden Room"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10DEF"
+            ],
+            "notes": "Slowbro Hidden Room 10DEF"
+          },
+          {
+            "pokemon_text": "Goldeen",
+            "pokemon_names": [
+              "Goldeen"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Goldeen"
+          }
+        ]
+      },
+      {
+        "location": "Union Cave",
+        "default_horde_size": 3,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Zubat F1 B1",
+            "pokemon_names": [
+              "Zubat"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Zubat F1 B1"
+          },
+          {
+            "pokemon_text": "Sandshrew F1",
+            "pokemon_names": [
+              "Sandshrew"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Sandshrew F1"
+          },
+          {
+            "pokemon_text": "Golbat B2",
+            "pokemon_names": [
+              "Golbat"
+            ],
+            "horde_size": 3,
+            "ev_yield_text": [],
+            "notes": "Golbat B2"
+          },
+          {
+            "pokemon_text": "Quagsire B1",
+            "pokemon_names": [
+              "Quagsire"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10HP"
+            ],
+            "notes": "Quagsire x5 B1 10HP"
+          }
+        ]
+      },
+      {
+        "location": "Victory Road",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Ursaring F1 (Winter)",
+            "pokemon_names": [
+              "Ursaring"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Ursaring F1 (Winter)"
+          },
+          {
+            "pokemon_text": "Donphan F1",
+            "pokemon_names": [
+              "Donphan"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Donphan F1"
+          },
+          {
+            "pokemon_text": "Golbat F2",
+            "pokemon_names": [
+              "Golbat"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SPEED"
+            ],
+            "notes": "Golbat F2 10SPEED"
+          },
+          {
+            "pokemon_text": "Sandslash F3",
+            "pokemon_names": [
+              "Sandslash"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10DEF"
+            ],
+            "notes": "Sandslash F3 10DEF"
+          }
+        ]
+      },
+      {
+        "location": "Violet City",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Poliwag",
+            "pokemon_names": [
+              "Poliwag"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Poliwag"
+          }
+        ]
+      },
+      {
+        "location": "Whirl Islands",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Seel B1",
+            "pokemon_names": [
+              "Seel"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Seel B1"
+          },
+          {
+            "pokemon_text": "Golbat B2",
+            "pokemon_names": [
+              "Golbat"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [
+              "10SPEED"
+            ],
+            "notes": "Golbat B2 10SPEED"
+          },
+          {
+            "pokemon_text": "Krabby F1",
+            "pokemon_names": [
+              "Krabby"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Krabby F1"
+          },
+          {
+            "pokemon_text": "Horsea F1 B2",
+            "pokemon_names": [
+              "Horsea"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Horsea F1 B2"
+          },
+          {
+            "pokemon_text": "Tentacool F1",
+            "pokemon_names": [
+              "Tentacool"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Tentacool F1"
+          },
+          {
+            "pokemon_text": "Kanto updated",
+            "pokemon_names": [
+              "Kanto updated"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Kanto updated"
+          }
+        ]
+      },
+      {
+        "location": "NOTE that Ursaring locations are bugged in the pokedex, but i found a",
+        "default_horde_size": 5,
+        "notes": "Ursaring horde in top floor of Victory Road - Kanto. Seems to be 50/50 Donphan Horde.",
+        "encounters": [
+          {
+            "pokemon_text": "I remember noticing at least one other evolved poke with bugged location in the dex, but i dont remember for which ones.",
+            "pokemon_names": [
+              "I remember noticing at least one other evolved poke with bugged location in the dex but i dont remember for which ones."
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "I remember noticing at least one other evolved poke with bugged location in the dex, but i dont remember for which ones."
+          }
+        ]
+      },
+      {
+        "location": "Route 115",
+        "default_horde_size": 5,
+        "notes": "",
+        "encounters": [
+          {
+            "pokemon_text": "Swellow",
+            "pokemon_names": [
+              "Swellow"
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "Swellow"
+          },
+          {
+            "pokemon_text": "this is not slowking, is a slowbro.",
+            "pokemon_names": [
+              "this is not slowking is a slowbro."
+            ],
+            "horde_size": 5,
+            "ev_yield_text": [],
+            "notes": "this is not slowking, is a slowbro."
+          }
+        ]
+      }
+    ]
+  }
+}

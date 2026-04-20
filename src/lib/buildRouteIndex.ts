@@ -10,6 +10,7 @@ import type {
   TimeOfDay
 } from "../types/pokemon";
 import { getHeldItemsForPokemon } from "../data/heldItemsData";
+import { getHordeSizeForEncounter } from "../data/hordeData";
 import { getNonTimeLocationTags, getSeasonTags, getTimeOfDayTags, sortSeasons, sortTimesOfDay } from "./locationMetadata";
 import {
   getBaseLocation,
@@ -77,6 +78,7 @@ function buildEncounter(pokemon: PokemonJsonRecord, encounter: LocationAreaEncou
     minLevel: encounter.min_level,
     maxLevel: encounter.max_level,
     rarity: `${encounter.rarity ?? DEFAULT_RARITY}`,
+    hordeSize: getHordeSizeForEncounter(pokemon.name, encounter),
     timeOfDay: getTimeOfDayTags(encounter.location),
     seasons: getSeasonTags(encounter.location),
     locationTags: getNonTimeLocationTags(encounter.location),
@@ -171,6 +173,7 @@ export function filterAndSortEncounters(
         !includeRegionFilter || filters.regionNames.length === 0 || filters.regionNames.includes(encounter.regionName);
       const matchesType = !filters.encounterType || encounter.encounterType === filters.encounterType;
       const matchesRarity = !filters.rarity || encounter.rarity === filters.rarity;
+      const matchesHordeSize = !filters.hordeSize || `${encounter.hordeSize ?? ""}` === filters.hordeSize;
       const matchesEvYield =
         !filters.evYieldStat || encounter.evYields.some((evYield) => evYield.stat === filters.evYieldStat);
       const matchesAbility =
@@ -195,6 +198,7 @@ export function filterAndSortEncounters(
         matchesRegion &&
         matchesType &&
         matchesRarity &&
+        matchesHordeSize &&
         matchesEvYield &&
         matchesAbility &&
         matchesHeldItem &&

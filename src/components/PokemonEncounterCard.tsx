@@ -85,6 +85,12 @@ export function PokemonEncounterCard({ encounterGroup, showRoutes = false }: Pok
               <dt>Encounter</dt>
               <dd>{encounterGroup.encounterTypes.join(", ")}</dd>
             </div>
+            {encounterGroup.hordeSizes.length ? (
+              <div>
+                <dt>Horde Size</dt>
+                <dd>{encounterGroup.hordeSizes.map((size) => `x${size}`).join(", ")}</dd>
+              </div>
+            ) : null}
             <div>
               <dt>Level</dt>
               <dd>

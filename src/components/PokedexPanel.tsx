@@ -87,6 +87,11 @@ export function PokedexPanel({ pokemonRecords, filters, onFiltersChange, onFilte
   const abilityOptions = useMemo(() => getAbilityOptions(allGroups), [allGroups]);
   const heldItemOptions = useMemo(() => getHeldItemOptions(allGroups), [allGroups]);
   const moveOptions = useMemo(() => getMoveOptions(allGroups), [allGroups]);
+  const hordeSizeOptions = useMemo(
+    () =>
+      Array.from(new Set(allGroups.flatMap((group) => group.hordeSizes))).sort((a, b) => a - b),
+    [allGroups]
+  );
 
   return (
     <div className="route-details pokedex-panel">
@@ -116,6 +121,7 @@ export function PokedexPanel({ pokemonRecords, filters, onFiltersChange, onFilte
               filters={filters}
               encounterTypes={[]}
               rarities={[]}
+              hordeSizeOptions={hordeSizeOptions}
               evYieldStats={evYieldStats}
               abilityOptions={abilityOptions}
               heldItemOptions={heldItemOptions}

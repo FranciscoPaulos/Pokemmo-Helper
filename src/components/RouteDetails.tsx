@@ -130,6 +130,13 @@ export function RouteDetails({
     [sourceEncounters]
   );
   const rarities = useMemo(() => uniqueSorted(sourceEncounters.map((encounter) => encounter.rarity)), [sourceEncounters]);
+  const hordeSizeOptions = useMemo(
+    () =>
+      Array.from(
+        new Set(sourceEncounters.map((encounter) => encounter.hordeSize).filter((size): size is 3 | 5 => Boolean(size)))
+      ).sort((a, b) => a - b),
+    [sourceEncounters]
+  );
   const evYieldStats = useMemo(
     () => sortEvYieldStats(sourceEncounters.flatMap((encounter) => encounter.evYields.map((evYield) => evYield.stat))),
     [sourceEncounters]
@@ -216,6 +223,7 @@ export function RouteDetails({
               filters={filters}
               encounterTypes={encounterTypes}
               rarities={rarities}
+              hordeSizeOptions={hordeSizeOptions}
               evYieldStats={evYieldStats}
               abilityOptions={abilityOptions}
               heldItemOptions={heldItemOptions}

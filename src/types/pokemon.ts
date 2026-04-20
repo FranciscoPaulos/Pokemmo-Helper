@@ -104,6 +104,7 @@ export interface PokemonEncounter {
   minLevel?: number;
   maxLevel?: number;
   rarity: string;
+  hordeSize?: 3 | 5;
   timeOfDay: TimeOfDay[];
   seasons: Season[];
   locationTags: string[];
@@ -117,6 +118,7 @@ export interface PokemonEncounterGroup {
   encounters: PokemonEncounter[];
   encounterTypes: string[];
   rarities: string[];
+  hordeSizes: Array<3 | 5>;
   routeNames: string[];
   routeRegions: Array<{
     regionName: string;
@@ -219,6 +221,7 @@ export interface EncounterFilters {
   regionNames: string[];
   encounterType: string;
   rarity: string;
+  hordeSize: "" | "3" | "5";
   evYieldStat: EvYieldStat | "";
   abilityName: string;
   heldItemId: string;

@@ -1,4 +1,5 @@
 import { getHeldItemsForPokemon } from "../../data/heldItemsData";
+import { getHordeSizeForEncounter } from "../../data/hordeData";
 import type {
   EncounterFilters,
   PokemonEncounter,
@@ -35,6 +36,7 @@ function buildPokedexEncounter(pokemon: PokemonJsonRecord): PokemonEncounter {
     normalizedLocation: "not-listed",
     encounterType: pokemon.location_area_encounters?.length ? "Wild" : "Unavailable",
     rarity: pokemon.location_area_encounters?.length ? "Known" : "Unavailable",
+    hordeSize: undefined,
     timeOfDay: [],
     seasons: [],
     locationTags: [],
@@ -79,6 +81,13 @@ function getPokedexGroup(pokemon: PokemonJsonRecord): PokemonEncounterGroup {
     new Set((pokemon.location_area_encounters ?? []).map((rawEncounter) => `${rawEncounter.rarity ?? "Unknown"}`))
   ).sort((a, b) => raritySortValue(a) - raritySortValue(b));
   const routeRegionsByName = new Map<string, Set<string>>();
+  const hordeSizes = Array.from(
+    new Set(
+      (pokemon.location_area_encounters ?? [])
+        .map((rawEncounter) => getHordeSizeForEncounter(pokemon.name, rawEncounter))
+        .filter((hordeSize): hordeSize is 3 | 5 => Boolean(hordeSize))
+    )
+  ).sort((a, b) => a - b);
 
   for (const rawEncounter of pokemon.location_area_encounters ?? []) {
     const regionName = normalizeDisplayLocation(`${rawEncounter.region_name ?? "Unknown"}`);
@@ -99,6 +108,7 @@ function getPokedexGroup(pokemon: PokemonJsonRecord): PokemonEncounterGroup {
     encounters: [encounter],
     encounterTypes: encounterTypes.length ? encounterTypes : [encounter.encounterType],
     rarities: rarities.length ? rarities : [encounter.rarity],
+    hordeSizes,
     routeNames: routeRegions.flatMap((routeRegion) =>
       routeRegion.routeNames.map((routeName) => `${routeRegion.regionName}: ${routeName}`)
     ),
@@ -133,8 +143,9 @@ export function filterAndSortPokedexGroups(
         !filters.heldItemId ||
         getHeldItemsForPokemon(pokemon.pokemonId).some((heldItem) => `${heldItem.id}` === filters.heldItemId);
       const matchesMove = !filters.moveId || pokemon.rawPokemon.moves?.some((move) => `${move.id}` === filters.moveId);
+      const matchesHordeSize = !filters.hordeSize || group.hordeSizes.some((hordeSize) => `${hordeSize}` === filters.hordeSize);
 
-      return matchesSearch && matchesEvYield && matchesAbility && matchesHeldItem && matchesMove;
+      return matchesSearch && matchesEvYield && matchesAbility && matchesHeldItem && matchesMove && matchesHordeSize;
     })
     .sort((a, b) => {
       const direction = filters.sortDirection === "asc" ? 1 : -1;

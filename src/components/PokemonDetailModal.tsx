@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { getHeldItemsForPokemon } from "../data/heldItemsData";
+import { getHordeSizeForEncounter } from "../data/hordeData";
 import { getMoveById } from "../data/moveData";
 import {
   formatAbilityName,
@@ -294,6 +295,10 @@ function renderTypeBadge(typeName: string | undefined) {
   return <span className={`pokemon-type-badge pokemon-type-badge--${typeName ?? "unknown"}`}>{formatValue(typeName)}</span>;
 }
 
+function formatHordeSize(size: 3 | 5 | undefined): string {
+  return size ? `x${size}` : "-";
+}
+
 export function PokemonDetailModal({ encounterGroup, onClose }: PokemonDetailModalProps) {
   const encounter = encounterGroup.pokemon;
   const pokemon = encounter.rawPokemon;
@@ -527,22 +532,28 @@ export function PokemonDetailModal({ encounterGroup, onClose }: PokemonDetailMod
                     <th>Location</th>
                     <th>Levels</th>
                     <th>Rarity</th>
+                    <th>Horde</th>
                     <th>Season</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {encounterRows.map((row, index) => (
-                    <tr key={`${row.region_name}-${row.location}-${row.type}-${row.rarity}-${index}`}>
-                      <td>{formatValue(row.type)}</td>
-                      <td>{normalizeDisplayLocation(row.region_name ?? "Unknown")}</td>
-                      <td>{normalizeDisplayLocation(row.location)}</td>
-                      <td>
-                        {formatValue(row.min_level)}-{formatValue(row.max_level)}
-                      </td>
-                      <td>{formatValue(row.rarity)}</td>
-                      <td>{getMergedEncounterSeasons(row).join(", ") || "Any"}</td>
-                    </tr>
-                  ))}
+                  {encounterRows.map((row, index) => {
+                    const hordeSize = getHordeSizeForEncounter(pokemon.name, row);
+
+                    return (
+                      <tr key={`${row.region_name}-${row.location}-${row.type}-${row.rarity}-${index}`}>
+                        <td>{formatValue(row.type)}</td>
+                        <td>{normalizeDisplayLocation(row.region_name ?? "Unknown")}</td>
+                        <td>{normalizeDisplayLocation(row.location)}</td>
+                        <td>
+                          {formatValue(row.min_level)}-{formatValue(row.max_level)}
+                        </td>
+                        <td>{formatValue(row.rarity)}</td>
+                        <td>{formatHordeSize(hordeSize)}</td>
+                        <td>{getMergedEncounterSeasons(row).join(", ") || "Any"}</td>
+                      </tr>
+                    );
+                  })}
                 </tbody>
               </table>
             </div>
