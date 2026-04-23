@@ -73,8 +73,8 @@ export function FiltersToolbar({
   }, [filters.heldItemId, heldItemOptions]);
 
   useEffect(() => {
-    setMoveSearch(getSelectedOptionLabel(moveOptions, filters.moveId));
-  }, [filters.moveId, moveOptions]);
+    setMoveSearch("");
+  }, [filters.moveIds]);
 
   function updateFilter<Key extends keyof EncounterFilters>(key: Key, value: EncounterFilters[Key]) {
     onChange({ ...filters, [key]: value });
@@ -91,13 +91,54 @@ export function FiltersToolbar({
   function updateSearchableFilter(
     typedValue: string,
     options: FilterOption[],
-    filterKey: "abilityName" | "heldItemId" | "moveId",
+    filterKey: "abilityName" | "heldItemId",
     setTypedValue: (value: string) => void
   ) {
     const selectedOption = findOptionByTypedLabel(options, typedValue);
 
     setTypedValue(typedValue);
     updateFilter(filterKey, selectedOption?.value ?? "");
+  }
+
+  const selectedMoveOptions = filters.moveIds
+    .map((moveId) => moveOptions.find((option) => option.value === moveId))
+    .filter((option): option is FilterOption => Boolean(option));
+
+  const moveSuggestions = moveOptions
+    .filter((option) => !filters.moveIds.includes(option.value))
+    .filter((option) => {
+      const normalizedSearch = moveSearch.trim().toLowerCase();
+
+      return !normalizedSearch || option.label.toLowerCase().includes(normalizedSearch);
+    })
+    .slice(0, 8);
+
+  function addMoveFilter(option: FilterOption) {
+    if (filters.moveIds.includes(option.value)) {
+      setMoveSearch("");
+      return;
+    }
+
+    updateFilter("moveIds", [...filters.moveIds, option.value]);
+    setMoveSearch("");
+  }
+
+  function removeMoveFilter(moveId: string) {
+    updateFilter(
+      "moveIds",
+      filters.moveIds.filter((selectedMoveId) => selectedMoveId !== moveId)
+    );
+  }
+
+  function commitTypedMove() {
+    const selectedOption = findOptionByTypedLabel(moveOptions, moveSearch);
+
+    if (!selectedOption) {
+      return false;
+    }
+
+    addMoveFilter(selectedOption);
+    return true;
   }
 
   return (
@@ -229,17 +270,55 @@ export function FiltersToolbar({
 
       <label>
         Move
-        <input
-          list="move-options"
-          value={moveSearch}
-          onChange={(event) => updateSearchableFilter(event.target.value, moveOptions, "moveId", setMoveSearch)}
-          placeholder="Type a move"
-        />
-        <datalist id="move-options">
-          {moveOptions.map((move) => (
-            <option key={move.value} value={move.label} />
-          ))}
-        </datalist>
+        <div className="multi-select-filter">
+          {selectedMoveOptions.length ? (
+            <div className="multi-select-filter__chips">
+              {selectedMoveOptions.map((move) => (
+                <button
+                  key={move.value}
+                  className="multi-select-filter__chip"
+                  type="button"
+                  onClick={() => removeMoveFilter(move.value)}
+                >
+                  <span>{move.label}</span>
+                  <strong>×</strong>
+                </button>
+              ))}
+            </div>
+          ) : null}
+
+          <div className="multi-select-filter__input-wrap">
+            <input
+              value={moveSearch}
+              onBlur={() => {
+                commitTypedMove();
+              }}
+              onChange={(event) => setMoveSearch(event.target.value)}
+              onKeyDown={(event) => {
+                if (event.key === "Enter" || event.key === ",") {
+                  if (commitTypedMove()) {
+                    event.preventDefault();
+                  }
+                }
+
+                if (event.key === "Backspace" && !moveSearch && filters.moveIds.length) {
+                  removeMoveFilter(filters.moveIds[filters.moveIds.length - 1]);
+                }
+              }}
+              placeholder={selectedMoveOptions.length ? "Add another move" : "Type a move"}
+            />
+
+            {moveSuggestions.length && moveSearch.trim() ? (
+              <div className="multi-select-filter__suggestions" role="listbox" aria-label="Move suggestions">
+                {moveSuggestions.map((move) => (
+                  <button key={move.value} type="button" onMouseDown={() => addMoveFilter(move)}>
+                    {move.label}
+                  </button>
+                ))}
+              </div>
+            ) : null}
+          </div>
+        </div>
       </label>
 
       <label>

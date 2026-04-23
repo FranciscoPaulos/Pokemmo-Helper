@@ -142,7 +142,9 @@ export function filterAndSortPokedexGroups(
       const matchesHeldItem =
         !filters.heldItemId ||
         getHeldItemsForPokemon(pokemon.pokemonId).some((heldItem) => `${heldItem.id}` === filters.heldItemId);
-      const matchesMove = !filters.moveId || pokemon.rawPokemon.moves?.some((move) => `${move.id}` === filters.moveId);
+      const matchesMove =
+        filters.moveIds.length === 0 ||
+        filters.moveIds.every((moveId) => pokemon.rawPokemon.moves?.some((move) => `${move.id}` === moveId));
       const matchesHordeSize = !filters.hordeSize || group.hordeSizes.some((hordeSize) => `${hordeSize}` === filters.hordeSize);
 
       return matchesSearch && matchesEvYield && matchesAbility && matchesHeldItem && matchesMove && matchesHordeSize;

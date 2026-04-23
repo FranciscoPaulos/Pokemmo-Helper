@@ -183,7 +183,8 @@ export function filterAndSortEncounters(
         !filters.heldItemId ||
         getHeldItemsForPokemon(encounter.pokemonId).some((heldItem) => `${heldItem.id}` === filters.heldItemId);
       const matchesMove =
-        !filters.moveId || encounter.rawPokemon.moves?.some((move) => `${move.id}` === filters.moveId);
+        filters.moveIds.length === 0 ||
+        filters.moveIds.every((moveId) => encounter.rawPokemon.moves?.some((move) => `${move.id}` === moveId));
       const matchesTime =
         !filters.timeOfDay ||
         (includeUntimedEncounters && encounter.timeOfDay.length === 0) ||

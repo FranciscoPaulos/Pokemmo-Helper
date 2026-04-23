@@ -27,7 +27,7 @@ const defaultFilters: EncounterFilters = {
   evYieldStat: "",
   abilityName: "",
   heldItemId: "",
-  moveId: "",
+  moveIds: [],
   timeOfDay: "",
   season: "",
   sortKey: "pokedexNumber",

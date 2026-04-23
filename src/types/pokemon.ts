@@ -225,7 +225,7 @@ export interface EncounterFilters {
   evYieldStat: EvYieldStat | "";
   abilityName: string;
   heldItemId: string;
-  moveId: string;
+  moveIds: string[];
   timeOfDay: TimeOfDay | "";
   season: Season | "";
   sortKey: EncounterSortKey;
