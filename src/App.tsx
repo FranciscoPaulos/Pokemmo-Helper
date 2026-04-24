@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { AppShell } from "./components/AppShell";
 import { EmptyState } from "./components/EmptyState";
 import { MapViewer } from "./components/MapViewer";
@@ -13,6 +13,7 @@ import { routeHotspotsByRegion } from "./data/routeHotspots";
 import { routeMapsByRouteKey } from "./data/routeMaps";
 import { getInitialRegion, getInitialRoute, sortRegionsByGeneration } from "./features/routes/routeSelection";
 import { buildRouteIndex } from "./lib/buildRouteIndex";
+import { trackPageView } from "./lib/analytics";
 import { normalizeLocationKey } from "./lib/normalizeLocation";
 import type { EncounterFilters, RegionRouteGroup, RouteEncounterGroup } from "./types/pokemon";
 
@@ -40,6 +41,25 @@ function getStoredTheme(): "light" | "dark" {
   return window.localStorage.getItem(themeStorageKey) === "dark" ? "dark" : "light";
 }
 
+function buildAnalyticsPage(appMode: AppMode, region?: RegionRouteGroup, route?: RouteEncounterGroup) {
+  if (appMode === "pokedex") {
+    return {
+      path: "/pokedex",
+      title: "PokeMMO Helper - Pokedex"
+    };
+  }
+
+  const regionSlug = normalizeLocationKey(region?.displayName ?? "all-regions");
+  const routeSlug = route ? normalizeLocationKey(route.displayName) : "all-routes";
+
+  return {
+    path: `/route-master/${regionSlug}/${routeSlug}`,
+    title: route
+      ? `PokeMMO Helper - ${region?.displayName ?? "Region"} - ${route.displayName}`
+      : `PokeMMO Helper - ${region?.displayName ?? "Region"} - All Routes`
+  };
+}
+
 function App() {
   const [selectedRegion, setSelectedRegion] = useState<RegionRouteGroup | undefined>();
   const [selectedRoute, setSelectedRoute] = useState<RouteEncounterGroup | undefined>();
@@ -47,6 +67,7 @@ function App() {
   const [pokedexFilters, setPokedexFilters] = useState<EncounterFilters>(defaultFilters);
   const [appMode, setAppMode] = useState<AppMode>("routeMaster");
   const [theme, setTheme] = useState<"light" | "dark">(() => getStoredTheme());
+  const lastTrackedPageRef = useRef<string>("");
 
   const dataState = useMemo(() => {
     try {
@@ -108,6 +129,18 @@ function App() {
     document.documentElement.dataset.theme = theme;
     window.localStorage.setItem(themeStorageKey, theme);
   }, [theme]);
+
+  useEffect(() => {
+    const { path, title } = buildAnalyticsPage(appMode, selectedRegion, selectedRoute);
+
+    if (lastTrackedPageRef.current === path) {
+      return;
+    }
+
+    document.title = title;
+    trackPageView(path, title);
+    lastTrackedPageRef.current = path;
+  }, [appMode, selectedRegion, selectedRoute]);
 
   function handleRegionSelect(region: RegionRouteGroup) {
     setSelectedRegion(region);
