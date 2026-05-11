@@ -29,6 +29,8 @@ const defaultFilters: EncounterFilters = {
   abilityName: "",
   heldItemId: "",
   moveIds: [],
+  levelMin: "",
+  levelMax: "",
   timeOfDay: "",
   season: "",
   sortKey: "pokedexNumber",

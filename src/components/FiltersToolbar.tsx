@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, type CSSProperties } from "react";
 import type { EncounterFilters, EncounterSortKey, EvYieldStat, Season, SortDirection, TimeOfDay } from "../types/pokemon";
 import { formatStatName } from "../features/pokemon/formatPokemon";
 
@@ -14,8 +14,13 @@ interface FiltersToolbarProps {
   regionOptions: string[];
   timeOfDayOptions?: TimeOfDay[];
   seasonOptions?: Season[];
+  levelBounds?: {
+    min: number;
+    max: number;
+  };
   showEncounterFilters?: boolean;
   showAvailabilityFilter?: boolean;
+  showLevelFilter?: boolean;
   showSearchFilter?: boolean;
   showRegionFilter: boolean;
   onChange: (filters: EncounterFilters) => void;
@@ -64,8 +69,10 @@ export function FiltersToolbar({
   regionOptions,
   timeOfDayOptions = [],
   seasonOptions = [],
+  levelBounds,
   showEncounterFilters = true,
   showAvailabilityFilter = false,
+  showLevelFilter = false,
   showSearchFilter = true,
   showRegionFilter,
   onChange
@@ -73,6 +80,8 @@ export function FiltersToolbar({
   const [abilitySearch, setAbilitySearch] = useState("");
   const [heldItemSearch, setHeldItemSearch] = useState("");
   const [moveSearch, setMoveSearch] = useState("");
+  const [draftLevelMin, setDraftLevelMin] = useState<number | "">("");
+  const [draftLevelMax, setDraftLevelMax] = useState<number | "">("");
 
   useEffect(() => {
     setAbilitySearch(getSelectedOptionLabel(abilityOptions, filters.abilityName));
@@ -86,8 +95,47 @@ export function FiltersToolbar({
     setMoveSearch("");
   }, [filters.moveIds]);
 
+  useEffect(() => {
+    setDraftLevelMin(filters.levelMin);
+    setDraftLevelMax(filters.levelMax);
+  }, [filters.levelMin, filters.levelMax]);
+
   function updateFilter<Key extends keyof EncounterFilters>(key: Key, value: EncounterFilters[Key]) {
     onChange({ ...filters, [key]: value });
+  }
+
+  function updateLevelFilter(levelMin: number | "", levelMax: number | "") {
+    onChange({ ...filters, levelMin, levelMax });
+  }
+
+  const levelMinBound = levelBounds?.min ?? 1;
+  const levelMaxBound = levelBounds?.max ?? 100;
+  const selectedLevelMin = draftLevelMin === "" ? levelMinBound : draftLevelMin;
+  const selectedLevelMax = draftLevelMax === "" ? levelMaxBound : draftLevelMax;
+  const levelRangeSize = Math.max(levelMaxBound - levelMinBound, 1);
+  const levelRangeStyle = {
+    "--level-min-percent": `${((selectedLevelMin - levelMinBound) / levelRangeSize) * 100}%`,
+    "--level-max-percent": `${((selectedLevelMax - levelMinBound) / levelRangeSize) * 100}%`
+  } as CSSProperties;
+
+  function normalizeLevelMin(value: number) {
+    return Math.min(Math.max(value, levelMinBound), selectedLevelMax);
+  }
+
+  function normalizeLevelMax(value: number) {
+    return Math.max(Math.min(value, levelMaxBound), selectedLevelMin);
+  }
+
+  function commitLevelFilter(levelMin = selectedLevelMin, levelMax = selectedLevelMax) {
+    updateLevelFilter(levelMin === levelMinBound ? "" : levelMin, levelMax === levelMaxBound ? "" : levelMax);
+  }
+
+  function changeSelectedLevelMin(value: number) {
+    setDraftLevelMin(normalizeLevelMin(value));
+  }
+
+  function changeSelectedLevelMax(value: number) {
+    setDraftLevelMax(normalizeLevelMax(value));
   }
 
   function toggleRegion(regionName: string) {
@@ -196,6 +244,15 @@ export function FiltersToolbar({
           key: "horde",
           label: `Horde: x${filters.hordeSize}`,
           onClear: () => updateFilter("hordeSize", "")
+        }
+      : undefined,
+    showLevelFilter && (filters.levelMin !== "" || filters.levelMax !== "")
+      ? {
+          key: "level",
+          label: `Level: ${filters.levelMin === "" ? levelMinBound : filters.levelMin}-${
+            filters.levelMax === "" ? levelMaxBound : filters.levelMax
+          }`,
+          onClear: () => updateLevelFilter("", "")
         }
       : undefined,
     filters.evYieldStat
@@ -325,6 +382,55 @@ export function FiltersToolbar({
                 ))}
               </select>
             </label>
+          ) : null}
+
+          {showLevelFilter && levelBounds ? (
+            <fieldset className="level-range-filter filter-grid__wide">
+              <legend>Pokemon Level</legend>
+              <div className="level-range-filter__control" style={levelRangeStyle}>
+                <div className="level-range-filter__values" aria-hidden="true">
+                  <span className="level-range-filter__value level-range-filter__value--min">Lv. {selectedLevelMin}</span>
+                  <span className="level-range-filter__value level-range-filter__value--max">Lv. {selectedLevelMax}</span>
+                </div>
+                <div className="level-range-filter__track">
+                  <span className="level-range-filter__selected" aria-hidden="true" />
+                  <input
+                    aria-label="Minimum Pokemon level"
+                    type="range"
+                    min={levelMinBound}
+                    max={levelMaxBound}
+                    value={selectedLevelMin}
+                    onBlur={(event) =>
+                      commitLevelFilter(normalizeLevelMin(Number(event.currentTarget.value)), selectedLevelMax)
+                    }
+                    onChange={(event) => changeSelectedLevelMin(Number(event.target.value))}
+                    onKeyUp={(event) =>
+                      commitLevelFilter(normalizeLevelMin(Number(event.currentTarget.value)), selectedLevelMax)
+                    }
+                    onPointerUp={(event) =>
+                      commitLevelFilter(normalizeLevelMin(Number(event.currentTarget.value)), selectedLevelMax)
+                    }
+                  />
+                  <input
+                    aria-label="Maximum Pokemon level"
+                    type="range"
+                    min={levelMinBound}
+                    max={levelMaxBound}
+                    value={selectedLevelMax}
+                    onBlur={(event) =>
+                      commitLevelFilter(selectedLevelMin, normalizeLevelMax(Number(event.currentTarget.value)))
+                    }
+                    onChange={(event) => changeSelectedLevelMax(Number(event.target.value))}
+                    onKeyUp={(event) =>
+                      commitLevelFilter(selectedLevelMin, normalizeLevelMax(Number(event.currentTarget.value)))
+                    }
+                    onPointerUp={(event) =>
+                      commitLevelFilter(selectedLevelMin, normalizeLevelMax(Number(event.currentTarget.value)))
+                    }
+                  />
+                </div>
+              </div>
+            </fieldset>
           ) : null}
 
           {showAvailabilityFilter ? (

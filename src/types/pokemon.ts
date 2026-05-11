@@ -227,6 +227,8 @@ export interface EncounterFilters {
   abilityName: string;
   heldItemId: string;
   moveIds: string[];
+  levelMin: number | "";
+  levelMax: number | "";
   timeOfDay: TimeOfDay | "";
   season: Season | "";
   sortKey: EncounterSortKey;

@@ -106,6 +106,8 @@ function hasAppliedFilters(filters: EncounterFilters): boolean {
       filters.abilityName ||
       filters.heldItemId ||
       filters.moveIds.length ||
+      filters.levelMin !== "" ||
+      filters.levelMax !== "" ||
       filters.timeOfDay ||
       filters.season
   );
@@ -248,7 +250,13 @@ export function RouteDetails({
               regionOptions={regionOptions}
               timeOfDayOptions={timeOfDayOptions}
               seasonOptions={seasonOptions}
+              levelBounds={
+                typeof minLevel === "number" && typeof maxLevel === "number"
+                  ? { min: minLevel, max: maxLevel }
+                  : undefined
+              }
               showAvailabilityFilter
+              showLevelFilter
               showRegionFilter={isGlobalSearch}
               showSearchFilter={false}
               onChange={onFiltersChange}

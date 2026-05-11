@@ -41,6 +41,20 @@ function formatCompactList(values: string[], emptyLabel: string, visibleCount = 
   return remainingCount > 0 ? `${visibleOptions.join(", ")} +${remainingCount}` : visibleOptions.join(", ");
 }
 
+function formatRouteRegionSummary(routeRegions: PokemonEncounterGroup["routeRegions"]): string | undefined {
+  const routeLocationCount = routeRegions.reduce((total, routeRegion) => total + routeRegion.routeNames.length, 0);
+
+  if (routeLocationCount > 2) {
+    return undefined;
+  }
+
+  return routeRegions
+    .flatMap((routeRegion) =>
+      routeRegion.routeNames.map((routeName) => `${routeRegion.regionName}: ${routeName}`)
+    )
+    .join(", ");
+}
+
 export function PokemonEncounterCard({ encounterGroup, showRoutes = false }: PokemonEncounterCardProps) {
   const [isDetailOpen, setIsDetailOpen] = useState(false);
   const encounter = encounterGroup.pokemon;
@@ -52,11 +66,12 @@ export function PokemonEncounterCard({ encounterGroup, showRoutes = false }: Pok
   );
   const routeSummary = encounterGroup.routeNames.join(", ");
   const displayRouteSummary = showRoutes
-    ? routeLocationCount
+    ? formatRouteRegionSummary(encounterGroup.routeRegions) ||
+      (routeLocationCount
       ? `${formatCompactList(routeRegionNames, "Unknown region", 3)} - ${routeLocationCount} ${
           routeLocationCount === 1 ? "location" : "locations"
         }`
-      : "No wild route listed"
+      : "No wild route listed")
     : routeSummary;
   const typeNames = uniqueValues(encounter.types);
   const displayTimeLabel = formatOptionSummary(encounterGroup.timeOfDay, "Any time", allTimesOfDay);

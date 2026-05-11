@@ -185,6 +185,12 @@ export function filterAndSortEncounters(
       const matchesMove =
         filters.moveIds.length === 0 ||
         filters.moveIds.every((moveId) => encounter.rawPokemon.moves?.some((move) => `${move.id}` === moveId));
+      const matchesLevel =
+        (filters.levelMin === "" && filters.levelMax === "") ||
+        (typeof encounter.minLevel === "number" &&
+          typeof encounter.maxLevel === "number" &&
+          encounter.maxLevel >= (filters.levelMin === "" ? Number.NEGATIVE_INFINITY : filters.levelMin) &&
+          encounter.minLevel <= (filters.levelMax === "" ? Number.POSITIVE_INFINITY : filters.levelMax));
       const matchesTime =
         !filters.timeOfDay ||
         (includeUntimedEncounters && encounter.timeOfDay.length === 0) ||
@@ -204,6 +210,7 @@ export function filterAndSortEncounters(
         matchesAbility &&
         matchesHeldItem &&
         matchesMove &&
+        matchesLevel &&
         matchesTime &&
         matchesSeason
       );
