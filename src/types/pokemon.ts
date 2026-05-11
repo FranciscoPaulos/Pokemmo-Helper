@@ -179,6 +179,7 @@ export interface MoveDataRecord {
   power: number | null;
   damage_class: string;
   type: string;
+  target?: string | { name?: string };
   effect: string;
   name_translations?: Record<string, MoveTranslation>;
   effect_translations?: Record<string, MoveTranslation>;

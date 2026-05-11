@@ -1,15 +1,7 @@
 import type { RegionRouteGroup, RouteEncounterGroup } from "../../types/pokemon";
-import { makeRouteKey, normalizeLocationKey } from "../../lib/normalizeLocation";
+import { normalizeLocationKey } from "../../lib/normalizeLocation";
 
 const regionOrder = ["Kanto", "Johto", "Hoenn", "Sinnoh", "Unova"];
-
-const startingLocationByRegion: Record<string, string> = {
-  kanto: "Pallet Town",
-  johto: "New Bark Town",
-  hoenn: "Littleroot Town",
-  sinnoh: "Twinleaf Town",
-  unova: "Nuvema Town"
-};
 
 export function getRegionSortValue(regionName: string): number {
   const index = regionOrder.findIndex((region) => normalizeLocationKey(region) === normalizeLocationKey(regionName));
@@ -25,26 +17,12 @@ export function sortRegionsByGeneration(regions: RegionRouteGroup[]): RegionRout
   });
 }
 
-export function getStartingLocationName(region: RegionRouteGroup | undefined): string | undefined {
-  if (!region) {
-    return undefined;
-  }
-
-  return startingLocationByRegion[normalizeLocationKey(region.displayName)];
-}
-
 export function getInitialRegion(regions: RegionRouteGroup[]): RegionRouteGroup | undefined {
   return regions[0];
 }
 
-export function getInitialRoute(region: RegionRouteGroup | undefined): RouteEncounterGroup | undefined {
-  const startingLocation = getStartingLocationName(region);
-
-  if (!region || !startingLocation) {
-    return region?.routes[0];
-  }
-
-  return findRouteInRegion(region, makeRouteKey(region.displayName, startingLocation)) ?? region.routes[0];
+export function getInitialRoute(_region: RegionRouteGroup | undefined): RouteEncounterGroup | undefined {
+  return undefined;
 }
 
 export function findRouteInRegion(

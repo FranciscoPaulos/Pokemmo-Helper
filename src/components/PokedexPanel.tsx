@@ -73,8 +73,19 @@ function getMoveOptions(groups: PokemonEncounterGroup[]): FilterOption[] {
   );
 }
 
+function hasAppliedFilters(filters: EncounterFilters): boolean {
+  return Boolean(
+    filters.search.trim() ||
+      filters.hordeSize ||
+      filters.evYieldStat ||
+      filters.abilityName ||
+      filters.heldItemId ||
+      filters.moveIds.length
+  );
+}
+
 export function PokedexPanel({ pokemonRecords, filters, onFiltersChange, onFiltersReset }: PokedexPanelProps) {
-  const [areFiltersOpen, setAreFiltersOpen] = useState(true);
+  const [areFiltersOpen, setAreFiltersOpen] = useState(false);
   const allGroups = useMemo(() => buildPokedexGroups(pokemonRecords), [pokemonRecords]);
   const filteredGroups = useMemo(() => filterAndSortPokedexGroups(allGroups, filters), [allGroups, filters]);
   const evYieldStats = useMemo(
@@ -92,6 +103,7 @@ export function PokedexPanel({ pokemonRecords, filters, onFiltersChange, onFilte
       Array.from(new Set(allGroups.flatMap((group) => group.hordeSizes))).sort((a, b) => a - b),
     [allGroups]
   );
+  const hasFilters = hasAppliedFilters(filters);
 
   return (
     <div className="route-details pokedex-panel">
@@ -105,15 +117,31 @@ export function PokedexPanel({ pokemonRecords, filters, onFiltersChange, onFilte
       </header>
 
       <section className="search-parameters">
-        <button
-          className="search-parameters__toggle"
-          type="button"
-          aria-expanded={areFiltersOpen}
-          onClick={() => setAreFiltersOpen((currentValue) => !currentValue)}
-        >
-          <span>Search parameters</span>
-          <span>{areFiltersOpen ? "Collapse" : "Expand"}</span>
-        </button>
+        <label className="quick-search">
+          Search Pokemon
+          <input
+            value={filters.search}
+            onChange={(event) => onFiltersChange({ ...filters, search: event.target.value })}
+            placeholder="Pokemon name"
+          />
+        </label>
+
+        <div className="search-parameters__actions">
+          <button
+            className="search-parameters__toggle"
+            type="button"
+            aria-expanded={areFiltersOpen}
+            onClick={() => setAreFiltersOpen((currentValue) => !currentValue)}
+          >
+            <span>Advanced filters</span>
+            <span>{areFiltersOpen ? "Collapse" : "Expand"}</span>
+          </button>
+          {hasFilters ? (
+            <button className="filters-clear-button" type="button" onClick={onFiltersReset}>
+              Clear all
+            </button>
+          ) : null}
+        </div>
 
         {areFiltersOpen ? (
           <div className="search-parameters__body">
@@ -129,8 +157,8 @@ export function PokedexPanel({ pokemonRecords, filters, onFiltersChange, onFilte
               regionOptions={[]}
               showEncounterFilters={false}
               showRegionFilter={false}
+              showSearchFilter={false}
               onChange={onFiltersChange}
-              onReset={onFiltersReset}
             />
           </div>
         ) : null}
@@ -139,7 +167,7 @@ export function PokedexPanel({ pokemonRecords, filters, onFiltersChange, onFilte
       {filteredGroups.length ? (
         <div className="encounter-list">
           {filteredGroups.map((group) => (
-            <PokemonEncounterCard key={group.groupKey} encounterGroup={group} showRoutes={Boolean(group.routeRegions.length)} />
+            <PokemonEncounterCard key={group.groupKey} encounterGroup={group} showRoutes />
           ))}
         </div>
       ) : (

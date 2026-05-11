@@ -6,7 +6,6 @@ import type {
   PokemonMoveReference,
   RegionRouteGroup,
   RouteEncounterGroup,
-  Season
 } from "../types/pokemon";
 import { getHeldItemsForPokemon } from "../data/heldItemsData";
 import { formatAbilityName } from "../features/pokemon/formatPokemon";
@@ -15,9 +14,7 @@ import { groupPokemonEncounters } from "../lib/groupPokemonEncounters";
 import { sortSeasons, sortTimesOfDay } from "../lib/locationMetadata";
 import { EmptyState } from "./EmptyState";
 import { FiltersToolbar } from "./FiltersToolbar";
-import { OptionToggle } from "./OptionToggle";
 import { PokemonEncounterCard } from "./PokemonEncounterCard";
-import { TimeOfDayToggle } from "./TimeOfDayToggle";
 
 interface RouteDetailsProps {
   regions: RegionRouteGroup[];
@@ -98,6 +95,22 @@ function getAbilityOptions(encounters: PokemonEncounter[]): FilterOption[] {
   );
 }
 
+function hasAppliedFilters(filters: EncounterFilters): boolean {
+  return Boolean(
+    filters.search.trim() ||
+      filters.regionNames.length ||
+      filters.encounterType ||
+      filters.rarity ||
+      filters.hordeSize ||
+      filters.evYieldStat ||
+      filters.abilityName ||
+      filters.heldItemId ||
+      filters.moveIds.length ||
+      filters.timeOfDay ||
+      filters.season
+  );
+}
+
 export function RouteDetails({
   regions,
   region,
@@ -107,7 +120,7 @@ export function RouteDetails({
   onFiltersChange,
   onFiltersReset
 }: RouteDetailsProps) {
-  const [areFiltersOpen, setAreFiltersOpen] = useState(true);
+  const [areFiltersOpen, setAreFiltersOpen] = useState(false);
   const isGlobalSearch = !route;
   const sourceEncounters = useMemo(
     () =>
@@ -157,6 +170,7 @@ export function RouteDetails({
   const regionOptions = useMemo(() => regions.map((searchRegion) => searchRegion.displayName), [regions]);
   const panelTitle = route?.displayName ?? "All routes";
   const eyebrow = route ? "Selected route" : "Global search";
+  const hasFilters = hasAppliedFilters(filters);
 
   if (!region && !regions.length) {
     return <EmptyState title="Choose a region" message="Pick a region to search its available Pokemon." />;
@@ -194,31 +208,34 @@ export function RouteDetails({
       </header>
 
       <section className="search-parameters">
-        <button
-          className="search-parameters__toggle"
-          type="button"
-          aria-expanded={areFiltersOpen}
-          onClick={() => setAreFiltersOpen((currentValue) => !currentValue)}
-        >
-          <span>Search parameters</span>
-          <span>{areFiltersOpen ? "Collapse" : "Expand"}</span>
-        </button>
+        <label className="quick-search">
+          Search Pokemon
+          <input
+            value={filters.search}
+            onChange={(event) => onFiltersChange({ ...filters, search: event.target.value })}
+            placeholder={route ? `Search ${route.displayName}` : "Search all routes"}
+          />
+        </label>
+
+        <div className="search-parameters__actions">
+          <button
+            className="search-parameters__toggle"
+            type="button"
+            aria-expanded={areFiltersOpen}
+            onClick={() => setAreFiltersOpen((currentValue) => !currentValue)}
+          >
+            <span>Advanced filters</span>
+            <span>{areFiltersOpen ? "Collapse" : "Expand"}</span>
+          </button>
+          {hasFilters ? (
+            <button className="filters-clear-button" type="button" onClick={onFiltersReset}>
+              Clear all
+            </button>
+          ) : null}
+        </div>
 
         {areFiltersOpen ? (
           <div className="search-parameters__body">
-            <TimeOfDayToggle
-              options={timeOfDayOptions}
-              selectedTime={filters.timeOfDay}
-              onChange={(timeOfDay) => onFiltersChange({ ...filters, timeOfDay })}
-            />
-
-            <OptionToggle<Season>
-              label="Season"
-              options={seasonOptions}
-              selectedValue={filters.season}
-              onChange={(season) => onFiltersChange({ ...filters, season })}
-            />
-
             <FiltersToolbar
               filters={filters}
               encounterTypes={encounterTypes}
@@ -229,9 +246,12 @@ export function RouteDetails({
               heldItemOptions={heldItemOptions}
               moveOptions={moveOptions}
               regionOptions={regionOptions}
+              timeOfDayOptions={timeOfDayOptions}
+              seasonOptions={seasonOptions}
+              showAvailabilityFilter
               showRegionFilter={isGlobalSearch}
+              showSearchFilter={false}
               onChange={onFiltersChange}
-              onReset={onFiltersReset}
             />
           </div>
         ) : null}

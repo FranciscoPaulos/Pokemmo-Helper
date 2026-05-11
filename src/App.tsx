@@ -15,7 +15,7 @@ import { getInitialRegion, getInitialRoute, sortRegionsByGeneration } from "./fe
 import { buildRouteIndex } from "./lib/buildRouteIndex";
 import { trackPageView } from "./lib/analytics";
 import { normalizeLocationKey } from "./lib/normalizeLocation";
-import type { EncounterFilters, RegionRouteGroup, RouteEncounterGroup } from "./types/pokemon";
+import type { EncounterFilters, PokemonJsonRecord, RegionRouteGroup, RouteEncounterGroup } from "./types/pokemon";
 
 type AppMode = "routeMaster" | "pokedex";
 
@@ -57,6 +57,20 @@ function buildAnalyticsPage(appMode: AppMode, region?: RegionRouteGroup, route?:
     title: route
       ? `PokeMMO Helper - ${region?.displayName ?? "Region"} - ${route.displayName}`
       : `PokeMMO Helper - ${region?.displayName ?? "Region"} - All Routes`
+  };
+}
+
+function getPokedexOverview(pokemonRecords: PokemonJsonRecord[]) {
+  const wildPokemon = pokemonRecords.filter((pokemon) => (pokemon.location_area_encounters?.length ?? 0) > 0).length;
+  const alphaPokemon = pokemonRecords.filter((pokemon) => Boolean(pokemon.alpha)).length;
+  const obtainablePokemon = pokemonRecords.filter((pokemon) => pokemon.obtainable === true).length;
+
+  return {
+    totalPokemon: pokemonRecords.length,
+    wildPokemon,
+    unavailablePokemon: pokemonRecords.length - wildPokemon,
+    alphaPokemon,
+    obtainablePokemon
   };
 }
 
@@ -158,6 +172,7 @@ function App() {
   const mapConfig = selectedRegion
     ? routeHotspotsByRegion[normalizeLocationKey(selectedRegion.displayName)]
     : undefined;
+  const pokedexOverview = useMemo(() => getPokedexOverview(pokemonRecords), [pokemonRecords]);
 
   if (loadError) {
     return <EmptyState title="Data error" message={loadError} />;
@@ -226,10 +241,38 @@ function App() {
             onRouteSelect={handleRouteSelect}
           />
         ) : (
-          <div className="map-stage map-stage--empty">
-            <p className="eyebrow">Pokedex</p>
-            <h1>All Pokemon</h1>
-            <p>Use the center panel to search species, abilities, moves, held items, and EV yields.</p>
+          <div className="map-stage pokedex-overview">
+            <div className="map-header">
+              <div>
+                <p className="eyebrow">Pokedex</p>
+                <h1>All Pokemon</h1>
+              </div>
+              <span>{pokedexOverview.totalPokemon} entries</span>
+            </div>
+
+            <div className="overview-grid">
+              <div>
+                <span>Wild listed</span>
+                <strong>{pokedexOverview.wildPokemon}</strong>
+              </div>
+              <div>
+                <span>Unavailable</span>
+                <strong>{pokedexOverview.unavailablePokemon}</strong>
+              </div>
+              <div>
+                <span>Obtainable</span>
+                <strong>{pokedexOverview.obtainablePokemon}</strong>
+              </div>
+              <div>
+                <span>Alpha</span>
+                <strong>{pokedexOverview.alphaPokemon}</strong>
+              </div>
+            </div>
+
+            <div className="pokedex-overview__note">
+              <p className="eyebrow">Current scope</p>
+              <p>The center panel searches the full local dataset. Open advanced filters when you need abilities, moves, held items, EV yields, or horde size.</p>
+            </div>
           </div>
         )
       }
